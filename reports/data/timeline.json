@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "MM-202009090019",
+    "children" : [ {
+      "name" : "9904-MainThread",
+      "children" : [ {
+        "name" : "测试",
+        "uid" : "28ab7183eace957e",
+        "parentUid" : "11ea15f7a430c5cf76d2296dc53023de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641812440875,
+          "stop" : 1641812440875,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "11ea15f7a430c5cf76d2296dc53023de"
+    } ],
+    "uid" : "9fb04f524dc12cf54f22bf0224bb18e4"
+  } ]
+}

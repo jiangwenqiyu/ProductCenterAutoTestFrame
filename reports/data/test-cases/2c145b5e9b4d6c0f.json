@@ -1,0 +1,53 @@
+{
+  "uid" : "2c145b5e9b4d6c0f",
+  "name" : "test_01",
+  "fullName" : "testFunctions.test_f.TestSend#test_01",
+  "historyId" : "114bf6c5e98b914f78af9ccb90bf99e3",
+  "time" : {
+    "start" : 1641812074579,
+    "stop" : 1641812074579,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testFunctions"
+  }, {
+    "name" : "suite",
+    "value" : "test_f"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSend"
+  }, {
+    "name" : "host",
+    "value" : "MM-202009090019"
+  }, {
+    "name" : "thread",
+    "value" : "1020-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testFunctions.test_f"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2c145b5e9b4d6c0f.json",
+  "parameterValues" : [ ]
+}
