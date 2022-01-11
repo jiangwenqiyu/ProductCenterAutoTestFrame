@@ -9,219 +9,219 @@
         "name" : "TestBasicQuery",
         "children" : [ {
           "name" : "test_query[info0]",
-          "uid" : "4128970a4538a705",
+          "uid" : "86232454e58be58f",
           "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "passed",
+          "status" : "failed",
           "time" : {
-            "start" : 1641821116703,
-            "stop" : 1641821117054,
-            "duration" : 351
+            "start" : 1641908196631,
+            "stop" : 1641908196783,
+            "duration" : 152
           },
-          "flaky" : true,
-          "parameters" : [ "{'name': '/sysback/category/productplatformcategory/getPager', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'nowPage': 1, 'pageShow': 10, 'searchParam': '[{\"name\":\"reviewState\",\"value\":\"2\"},{\"name\":\"reviewState_q\",\"value\":\"EQ\"},{\"name\":\"categoryNo\",\"value\":\"\"},{\"name\":\"categoryName\",\"value\":\"\"},{\"name\":\"state\",\"value\":\"\"},{\"name\":\"categoryNo_q\",\"value\":\"Like\"},{\"name\":\"categoryName_q\",\"value\":\"Like\"},{\"name\":\"state_q\",\"value\":\"Like\"}]'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '202'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategory/getPager'}, 'validate': [{'eq': ['retStatus', '1']}]}" ]
+          "flaky" : false,
+          "parameters" : [ "{'name': '/sysback/category/productplatformcategory/getPager', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'nowPage': 1, 'pageShow': 10, 'searchParam': '[{\"name\":\"reviewState\",\"value\":\"2\"},{\"name\":\"reviewState_q\",\"value\":\"EQ\"},{\"name\":\"categoryNo\",\"value\":\"\"},{\"name\":\"categoryName\",\"value\":\"\"},{\"name\":\"state\",\"value\":\"\"},{\"name\":\"categoryNo_q\",\"value\":\"Like\"},{\"name\":\"categoryName_q\",\"value\":\"Like\"},{\"name\":\"state_q\",\"value\":\"Like\"}]'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '202'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategory/getPager'}, 'validate': [{'eq': ['retStatus', '1']}], 'title': '查询分类'}" ]
         }, {
           "name" : "test_query[info1]",
-          "uid" : "dc67201dd128159f",
+          "uid" : "467c613e26646234",
           "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "passed",
+          "status" : "failed",
           "time" : {
-            "start" : 1641821117066,
-            "stop" : 1641821117296,
-            "duration" : 230
+            "start" : 1641908196815,
+            "stop" : 1641908196859,
+            "duration" : 44
           },
-          "flaky" : true,
+          "flaky" : false,
           "parameters" : [ "{'name': '/sysback/category/productplatformcategory/getPager', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'nowPage': 1, 'pageShow': 10, 'searchParam': '[{\"name\":\"reviewState\",\"value\":\"2\"},{\"name\":\"reviewState_q\",\"value\":\"EQ\"},{\"name\":\"categoryNo\",\"value\":\"\"},{\"name\":\"categoryName\",\"value\":\"安全带\"},{\"name\":\"state\",\"value\":\"\"},{\"name\":\"categoryNo_q\",\"value\":\"Like\"},{\"name\":\"categoryName_q\",\"value\":\"Like\"},{\"name\":\"state_q\",\"value\":\"Like\"}]'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '202'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategory/getPager'}, 'validate': [{'eq': ['retStatus', '1']}, {'in': ['安全带']}, {'in': ['30000']}]}" ]
         }, {
           "name" : "test_query[info2]",
-          "uid" : "d891b6c0370bf66d",
+          "uid" : "4e2ad8c477b758d3",
           "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "passed",
+          "status" : "failed",
           "time" : {
-            "start" : 1641821117303,
-            "stop" : 1641821117544,
-            "duration" : 241
+            "start" : 1641908196867,
+            "stop" : 1641908196918,
+            "duration" : 51
           },
-          "flaky" : true,
+          "flaky" : false,
           "parameters" : [ "{'name': '/sysback/category/productplatformcategory/getPlatCategoryByUuid', 'request': {'data': {'platCategoryUuid': '30000'}, 'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '202'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategory/getPlatCategoryByUuid'}, 'validate': [{'eq': ['retStatus', '1']}]}" ]
         }, {
           "name" : "test_query[info3]",
-          "uid" : "e568992eaa01f60c",
+          "uid" : "71b926a67579c7d7",
           "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
           "status" : "failed",
           "time" : {
-            "start" : 1641821117552,
-            "stop" : 1641821117685,
-            "duration" : 133
+            "start" : 1641908196947,
+            "stop" : 1641908197146,
+            "duration" : 199
           },
-          "flaky" : true,
+          "flaky" : false,
           "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/updatePlatCategory', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'acceptItemNames': '重量（KG）;外径（MM）;第二厚（MM）;第二长度（MM);第二重量（KG）;第二直径（MM）;最长边（CM）;第二数量;网扣;次长边（CM）;颜色;商品外观;包装外观;件装数量;材质;品牌标识;功能测试;生产日期;最短边（CM）;厚度（MM）;直径（MM）;数量;内径（MM）;其它要求', 'acceptItemUuids': ['99', '1', '30', '31', '32', '33', '34', '35', '36', '20', '2', '3', '7', '5', '4', '37', '6', '18', '10', '9', '17', '19', '21', '16'], 'batchOrderPrice': 0, 'brandNames': '', 'brandUuids': [], 'categoryName': '安全带', 'categoryNo': '01010101', 'categoryNote': '', 'categoryProductType': '3', 'categoryType': '3', 'classificationNames': '安全带;整篱剪', 'classificationUuids': ['10797', '10129'], 'dangerousOrder': None, 'isKey': '1', 'isMetal': '2', 'isPriceSensitive': '2', 'levelNum': '4', 'listAcceptItems': [{'categoryUuid': '30000', 'isNeed': '1', 'isNeedForPurchase': '1', 'itemName': '其它要求', 'uuid': '99'}, {'categoryUuid': '30000', 'isNeed': '1', 'isNeedForPurchase': '1', 'itemName': '重量（KG）', 'uuid': '1'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '颜色', 'uuid': '30'}, {'categoryUuid': '30000', 'isNeed': '1', 'isNeedForPurchase': '1', 'itemName': '商品外观', 'uuid': '31'}, {'categoryUuid': '30000', 'isNeed': '1', 'isNeedForPurchase': '1', 'itemName': '包装外观', 'uuid': '32'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '件装数量', 'uuid': '33'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '材质', 'uuid': '34'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '品牌标识', 'uuid': '35'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '功能测试', 'uuid': '36'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二数量', 'uuid': '20'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '最长边（CM）', 'uuid': '2'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '次长边（CM）', 'uuid': '3'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '数量', 'uuid': '7'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '厚度（MM）', 'uuid': '5'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '最短边（CM）', 'uuid': '4'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '生产日期', 'uuid': '37'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '直径（MM）', 'uuid': '6'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二重量（KG）', 'uuid': '18'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '外径（MM）', 'uuid': '10'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '内径（MM）', 'uuid': '9'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二长度（MM)', 'uuid': '17'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二直径（MM）', 'uuid': '19'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '网扣', 'uuid': '21'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二厚（MM）', 'uuid': '16'}], 'listQualificationTypes': [{'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '营业执照', 'qualificationTypeNo': '5', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '厂家授权书', 'qualificationTypeNo': '6', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '质量管理体系认证证书', 'qualificationTypeNo': '7', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '环境管理体系认证证书', 'qualificationTypeNo': '8', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '卫生许可证', 'qualificationTypeNo': '9', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '生产许可证', 'qualificationTypeNo': '10', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '职业健康疾病预防认证', 'qualificationTypeNo': '11', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '全国工业产品生产许可证', 'qualificationTypeNo': '12', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '测量管理体系认证证书', 'qualificationTypeNo': '13', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '制造计量器具许可证', 'qualificationTypeNo': '14', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '银行开户许可证', 'qualificationTypeNo': '15', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '特种设备制造许可证', 'qualificationTypeNo': '16', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': 'LA特种劳动防护用品安全标志证书', 'qualificationTypeNo': '17', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': 'MSDS化学品安全技术说明书', 'qualificationTypeNo': '18', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '排放污染物许可证', 'qualificationTypeNo': '19', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '商标注册证', 'qualificationTypeNo': '20', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': 'IS9000认证', 'qualificationTypeNo': '21', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': 'IS9002认证', 'qualificationTypeNo': '22', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': True, 'cateUuid': None, 'mustHave': '1', 'qualificationTypeName': '检验报告', 'qualificationTypeNo': '1', 'relType': '1', 'selected': True, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '材质单', 'qualificationTypeNo': '2', 'relType': '1', 'selected': False, 'uuid': None}, {'_checked': True, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '合格证', 'qualificationTypeNo': '3', 'relType': '1', 'selected': True, 'uuid': None}, {'_checked': True, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '3C认证', 'qualificationTypeNo': '4', 'relType': '1', 'selected': True, 'uuid': None}], 'parentUuid': '21000', 'position': 1010101, 'productSceneCategoryNames': '通用模块', 'productSceneCategoryUuids': ['10014'], 'productTemplateNames': '安全带', 'productTemplateUuids': ['10000'], 'state': '1', 'uuid': '30000'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '202'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/updatePlatCategory'}, 'validate': [{'eq': ['retStatus', '1']}]}" ]
         }, {
           "name" : "test_query[info4]",
-          "uid" : "76cf81917cf77bb9",
-          "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "broken",
-          "time" : {
-            "start" : 1641821117751,
-            "stop" : 1641821117905,
-            "duration" : 154
-          },
-          "flaky" : true,
-          "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/getPager', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'nowPage': 1, 'pageShow': 10, 'searchParam': '[{\"name\":\"reviewState\",\"value\":\"1\"},{\"name\":\"reviewState_q\",\"value\":\"EQ\"},{\"name\":\"categoryNo\",\"value\":\"\"},{\"name\":\"categoryName\",\"value\":\"\"},{\"name\":\"state\",\"value\":\"\"},{\"name\":\"categoryNo_q\",\"value\":\"Like\"},{\"name\":\"categoryName_q\",\"value\":\"Like\"},{\"name\":\"state_q\",\"value\":\"Like\"}]'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '203'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/getPager'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
-        }, {
-          "name" : "test_query[info5]",
-          "uid" : "81342bd1bff4fcd",
-          "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "broken",
-          "time" : {
-            "start" : 1641821117931,
-            "stop" : 1641821118064,
-            "duration" : 133
-          },
-          "flaky" : true,
-          "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/getPager', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'nowPage': 1, 'pageShow': 10, 'searchParam': '[{\"name\":\"reviewState\",\"value\":\"1\"},{\"name\":\"reviewState_q\",\"value\":\"EQ\"},{\"name\":\"categoryNo\",\"value\":\"\"},{\"name\":\"categoryName\",\"value\":\"安全带\"},{\"name\":\"state\",\"value\":\"\"},{\"name\":\"categoryNo_q\",\"value\":\"Like\"},{\"name\":\"categoryName_q\",\"value\":\"Like\"},{\"name\":\"state_q\",\"value\":\"Like\"}]'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '203'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/getPager'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
-        }, {
-          "name" : "test_query[info6]",
-          "uid" : "a526b9c1dab5d16d",
-          "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "broken",
-          "time" : {
-            "start" : 1641821118092,
-            "stop" : 1641821118236,
-            "duration" : 144
-          },
-          "flaky" : true,
-          "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid', 'request': {'data': {'platCategoryUuid': '04356fd97edd4238a43fb61f91ad7ccc'}, 'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'method': 'POST', 'params': {'buttonId': '130', 'menuId': '203'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
-        }, {
-          "name" : "test_query[info7]",
-          "uid" : "17360f3234208e82",
-          "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "broken",
-          "time" : {
-            "start" : 1641821118269,
-            "stop" : 1641821118776,
-            "duration" : 507
-          },
-          "flaky" : true,
-          "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/auditPass', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'uuids': '04356fd97edd4238a43fb61f91ad7ccc'}, 'method': 'POST', 'params': {'auditNote': '', 'buttonId': '130', 'menuId': '203', 'uuids': '04356fd97edd4238a43fb61f91ad7ccc'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/auditPass'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.retData', None]}, {'eq': ['content.timestamp', 0]}]}" ]
-        }, {
-          "name" : "test_query[info8]",
-          "uid" : "3db0588d5300deb3",
-          "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "broken",
-          "time" : {
-            "start" : 1641821118792,
-            "stop" : 1641821118933,
-            "duration" : 141
-          },
-          "flaky" : true,
-          "parameters" : [ "{'name': '/sysback/category/productplatformcategory/getPlatCategoryByUuid', 'request': {'data': {'platCategoryUuid': '30000'}, 'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '202'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategory/getPlatCategoryByUuid'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
-        }, {
-          "name" : "test_query[info9]",
-          "uid" : "efd6c6a337f1c7f2",
+          "uid" : "4d849c13b8af5d0e",
           "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
           "status" : "failed",
           "time" : {
-            "start" : 1641821118960,
-            "stop" : 1641821119104,
-            "duration" : 144
+            "start" : 1641908197154,
+            "stop" : 1641908197200,
+            "duration" : 46
           },
-          "flaky" : true,
+          "flaky" : false,
+          "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/getPager', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'nowPage': 1, 'pageShow': 10, 'searchParam': '[{\"name\":\"reviewState\",\"value\":\"1\"},{\"name\":\"reviewState_q\",\"value\":\"EQ\"},{\"name\":\"categoryNo\",\"value\":\"\"},{\"name\":\"categoryName\",\"value\":\"\"},{\"name\":\"state\",\"value\":\"\"},{\"name\":\"categoryNo_q\",\"value\":\"Like\"},{\"name\":\"categoryName_q\",\"value\":\"Like\"},{\"name\":\"state_q\",\"value\":\"Like\"}]'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '203'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/getPager'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
+        }, {
+          "name" : "test_query[info5]",
+          "uid" : "9c3772424c188a9c",
+          "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
+          "status" : "failed",
+          "time" : {
+            "start" : 1641908197209,
+            "stop" : 1641908197254,
+            "duration" : 45
+          },
+          "flaky" : false,
+          "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/getPager', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'nowPage': 1, 'pageShow': 10, 'searchParam': '[{\"name\":\"reviewState\",\"value\":\"1\"},{\"name\":\"reviewState_q\",\"value\":\"EQ\"},{\"name\":\"categoryNo\",\"value\":\"\"},{\"name\":\"categoryName\",\"value\":\"安全带\"},{\"name\":\"state\",\"value\":\"\"},{\"name\":\"categoryNo_q\",\"value\":\"Like\"},{\"name\":\"categoryName_q\",\"value\":\"Like\"},{\"name\":\"state_q\",\"value\":\"Like\"}]'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '203'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/getPager'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
+        }, {
+          "name" : "test_query[info6]",
+          "uid" : "519aeb8ca1a5577a",
+          "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
+          "status" : "failed",
+          "time" : {
+            "start" : 1641908197264,
+            "stop" : 1641908197313,
+            "duration" : 49
+          },
+          "flaky" : false,
+          "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid', 'request': {'data': {'platCategoryUuid': '04356fd97edd4238a43fb61f91ad7ccc'}, 'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'method': 'POST', 'params': {'buttonId': '130', 'menuId': '203'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
+        }, {
+          "name" : "test_query[info7]",
+          "uid" : "7555ae0d5fb50d9d",
+          "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
+          "status" : "failed",
+          "time" : {
+            "start" : 1641908197324,
+            "stop" : 1641908197378,
+            "duration" : 54
+          },
+          "flaky" : false,
+          "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/auditPass', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'uuids': '04356fd97edd4238a43fb61f91ad7ccc'}, 'method': 'POST', 'params': {'auditNote': '', 'buttonId': '130', 'menuId': '203', 'uuids': '04356fd97edd4238a43fb61f91ad7ccc'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/auditPass'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.retData', None]}, {'eq': ['content.timestamp', 0]}]}" ]
+        }, {
+          "name" : "test_query[info8]",
+          "uid" : "a2af2e1959e9a959",
+          "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
+          "status" : "failed",
+          "time" : {
+            "start" : 1641908197389,
+            "stop" : 1641908197441,
+            "duration" : 52
+          },
+          "flaky" : false,
+          "parameters" : [ "{'name': '/sysback/category/productplatformcategory/getPlatCategoryByUuid', 'request': {'data': {'platCategoryUuid': '30000'}, 'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '202'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategory/getPlatCategoryByUuid'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
+        }, {
+          "name" : "test_query[info9]",
+          "uid" : "f9a5b9c4e5bc2d6d",
+          "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
+          "status" : "failed",
+          "time" : {
+            "start" : 1641908197448,
+            "stop" : 1641908197509,
+            "duration" : 61
+          },
+          "flaky" : false,
           "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/updatePlatCategory', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'acceptItemNames': '重量（KG）;外径（MM）;第二厚（MM）;第二长度（MM);第二重量（KG）;第二直径（MM）;最长边（CM）;第二数量;网扣;次长边（CM）;颜色;商品外观;包装外观;件装数量;材质;品牌标识;功能测试;生产日期;最短边（CM）;厚度（MM）;直径（MM）;数量;内径（MM）;其它要求', 'acceptItemUuids': ['99', '1', '30', '31', '32', '33', '34', '35', '36', '20', '2', '3', '7', '5', '4', '37', '6', '18', '10', '9', '17', '19', '21', '16'], 'batchOrderPrice': 0, 'brandNames': '', 'brandUuids': [], 'categoryName': '安全带', 'categoryNo': '01010101', 'categoryNote': '', 'categoryProductType': '3', 'categoryType': '3', 'classificationNames': '安全带;整篱剪', 'classificationUuids': ['10797', '10129'], 'dangerousOrder': None, 'isKey': '1', 'isMetal': '2', 'isPriceSensitive': '2', 'levelNum': '4', 'listAcceptItems': [{'categoryUuid': '30000', 'isNeed': '1', 'isNeedForPurchase': '1', 'itemName': '其它要求', 'uuid': '99'}, {'categoryUuid': '30000', 'isNeed': '1', 'isNeedForPurchase': '1', 'itemName': '重量（KG）', 'uuid': '1'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '颜色', 'uuid': '30'}, {'categoryUuid': '30000', 'isNeed': '1', 'isNeedForPurchase': '1', 'itemName': '商品外观', 'uuid': '31'}, {'categoryUuid': '30000', 'isNeed': '1', 'isNeedForPurchase': '1', 'itemName': '包装外观', 'uuid': '32'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '件装数量', 'uuid': '33'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '材质', 'uuid': '34'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '品牌标识', 'uuid': '35'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '功能测试', 'uuid': '36'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二数量', 'uuid': '20'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '最长边（CM）', 'uuid': '2'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '次长边（CM）', 'uuid': '3'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '数量', 'uuid': '7'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '厚度（MM）', 'uuid': '5'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '最短边（CM）', 'uuid': '4'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '生产日期', 'uuid': '37'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '直径（MM）', 'uuid': '6'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二重量（KG）', 'uuid': '18'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '外径（MM）', 'uuid': '10'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '内径（MM）', 'uuid': '9'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二长度（MM)', 'uuid': '17'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二直径（MM）', 'uuid': '19'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '网扣', 'uuid': '21'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二厚（MM）', 'uuid': '16'}], 'listQualificationTypes': [{'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '营业执照', 'qualificationTypeNo': '5', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '厂家授权书', 'qualificationTypeNo': '6', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '质量管理体系认证证书', 'qualificationTypeNo': '7', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '环境管理体系认证证书', 'qualificationTypeNo': '8', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '卫生许可证', 'qualificationTypeNo': '9', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '生产许可证', 'qualificationTypeNo': '10', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '职业健康疾病预防认证', 'qualificationTypeNo': '11', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '全国工业产品生产许可证', 'qualificationTypeNo': '12', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '测量管理体系认证证书', 'qualificationTypeNo': '13', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '制造计量器具许可证', 'qualificationTypeNo': '14', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '银行开户许可证', 'qualificationTypeNo': '15', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '特种设备制造许可证', 'qualificationTypeNo': '16', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': 'LA特种劳动防护用品安全标志证书', 'qualificationTypeNo': '17', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': 'MSDS化学品安全技术说明书', 'qualificationTypeNo': '18', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '排放污染物许可证', 'qualificationTypeNo': '19', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '商标注册证', 'qualificationTypeNo': '20', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': 'IS9000认证', 'qualificationTypeNo': '21', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': 'IS9002认证', 'qualificationTypeNo': '22', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': True, 'cateUuid': None, 'mustHave': '1', 'qualificationTypeName': '检验报告', 'qualificationTypeNo': '1', 'relType': '1', 'selected': True, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '材质单', 'qualificationTypeNo': '2', 'relType': '1', 'selected': False, 'uuid': None}, {'_checked': True, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '合格证', 'qualificationTypeNo': '3', 'relType': '1', 'selected': True, 'uuid': None}, {'_checked': True, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '3C认证', 'qualificationTypeNo': '4', 'relType': '1', 'selected': True, 'uuid': None}], 'parentUuid': '21000', 'position': 1010101, 'productSceneCategoryNames': '通用模块', 'productSceneCategoryUuids': ['10014'], 'productTemplateNames': '安全带', 'productTemplateUuids': ['10000'], 'state': '1', 'uuid': '30000'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '202'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/updatePlatCategory'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
         }, {
           "name" : "test_query[info10]",
-          "uid" : "5a813b6319ca97ea",
+          "uid" : "89a3b933d5907f80",
           "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "broken",
+          "status" : "failed",
           "time" : {
-            "start" : 1641821119114,
-            "stop" : 1641821119339,
-            "duration" : 225
+            "start" : 1641908197516,
+            "stop" : 1641908197566,
+            "duration" : 50
           },
-          "flaky" : true,
+          "flaky" : false,
           "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid', 'request': {'data': {'platCategoryUuid': '04356fd97edd4238a43fb61f91ad7ccc'}, 'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'method': 'POST', 'params': {'buttonId': '130', 'menuId': '203'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
         }, {
           "name" : "test_query[info11]",
-          "uid" : "3a81bdcfe5352cde",
+          "uid" : "c329f5747d8fdd2d",
           "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "broken",
+          "status" : "failed",
           "time" : {
-            "start" : 1641821119354,
-            "stop" : 1641821119528,
-            "duration" : 174
+            "start" : 1641908197574,
+            "stop" : 1641908197624,
+            "duration" : 50
           },
-          "flaky" : true,
+          "flaky" : false,
           "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/auditNoPass', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'uuids': '9bd646d913e040e2ae7b53362666ea5c'}, 'method': 'POST', 'params': {'auditNote': '123', 'buttonId': '130', 'menuId': '203', 'uuids': '9bd646d913e040e2ae7b53362666ea5c'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/auditNoPass'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.retData', None]}, {'eq': ['content.timestamp', 0]}]}" ]
         }, {
           "name" : "test_query[info12]",
-          "uid" : "e4ec1f4bd3f0efc0",
+          "uid" : "a9a9e7b82abc8ac5",
           "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "broken",
+          "status" : "failed",
           "time" : {
-            "start" : 1641821119550,
-            "stop" : 1641821119677,
-            "duration" : 127
+            "start" : 1641908197634,
+            "stop" : 1641908197683,
+            "duration" : 49
           },
-          "flaky" : true,
+          "flaky" : false,
           "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/getPager', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'nowPage': 1, 'pageShow': 10, 'searchParam': '[{\"name\":\"reviewState\",\"value\":\"3\"},{\"name\":\"reviewState_q\",\"value\":\"EQ\"},{\"name\":\"categoryNo\",\"value\":\"\"},{\"name\":\"categoryName\",\"value\":\"安全带\"},{\"name\":\"state\",\"value\":\"\"},{\"name\":\"categoryNo_q\",\"value\":\"Like\"},{\"name\":\"categoryName_q\",\"value\":\"Like\"},{\"name\":\"state_q\",\"value\":\"Like\"}]'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '204'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/getPager'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
         }, {
           "name" : "test_query[info13]",
-          "uid" : "695fbd3d7b013cfd",
+          "uid" : "71c023aadcc174d4",
           "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "broken",
+          "status" : "failed",
           "time" : {
-            "start" : 1641821119705,
-            "stop" : 1641821119954,
-            "duration" : 249
+            "start" : 1641908197691,
+            "stop" : 1641908197747,
+            "duration" : 56
           },
-          "flaky" : true,
+          "flaky" : false,
           "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid', 'request': {'data': {'platCategoryUuid': '9bd646d913e040e2ae7b53362666ea5c'}, 'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '204'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
         }, {
           "name" : "test_query[info14]",
-          "uid" : "82d06126ffc4d12a",
+          "uid" : "942414808a461611",
           "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "broken",
+          "status" : "failed",
           "time" : {
-            "start" : 1641821119977,
-            "stop" : 1641821123949,
-            "duration" : 3972
+            "start" : 1641908197755,
+            "stop" : 1641908197958,
+            "duration" : 203
           },
-          "flaky" : true,
+          "flaky" : false,
           "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/updateFromNoPass', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'acceptItemNames': '重量（KG）;外径（MM）;第二厚（MM）;第二长度（MM);第二重量（KG）;第二直径（MM）;最长边（CM）;第二数量;网扣;次长边（CM）;颜色;商品外观;包装外观;件装数量;材质;品牌标识;功能测试;生产日期;最短边（CM）;厚度（MM）;直径（MM）;数量;内径（MM）;其它要求', 'acceptItemUuids': ['33', '16', '4', '35', '17', '18', '36', '3', '31', '1', '5', '21', '10', '37', '99', '7', '6', '20', '2', '19', '32', '9', '34', '30'], 'batchOrderPrice': 0, 'brandNames': '', 'brandUuids': [], 'categoryName': '安全带', 'categoryNo': '01010101', 'categoryNote': '', 'categoryProductType': '3', 'categoryType': '3', 'categoryUuid': '30000', 'classificationNames': '安全带;整篱剪', 'classificationUuids': ['10797', '10129'], 'dangerousOrder': None, 'isKey': '1', 'isMetal': '2', 'isPriceSensitive': '2', 'levelNum': '4', 'listAcceptItems': [{'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '件装数量', 'uuid': '33'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二厚（MM）', 'uuid': '16'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '最短边（CM）', 'uuid': '4'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '品牌标识', 'uuid': '35'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二长度（MM)', 'uuid': '17'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二重量（KG）', 'uuid': '18'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '功能测试', 'uuid': '36'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '次长边（CM）', 'uuid': '3'}, {'categoryUuid': '30000', 'isNeed': '1', 'isNeedForPurchase': '1', 'itemName': '商品外观', 'uuid': '31'}, {'categoryUuid': '30000', 'isNeed': '1', 'isNeedForPurchase': '1', 'itemName': '重量（KG）', 'uuid': '1'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '厚度（MM）', 'uuid': '5'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '网扣', 'uuid': '21'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '外径（MM）', 'uuid': '10'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '生产日期', 'uuid': '37'}, {'categoryUuid': '30000', 'isNeed': '1', 'isNeedForPurchase': '1', 'itemName': '其它要求', 'uuid': '99'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '数量', 'uuid': '7'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '直径（MM）', 'uuid': '6'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二数量', 'uuid': '20'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '最长边（CM）', 'uuid': '2'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '第二直径（MM）', 'uuid': '19'}, {'categoryUuid': '30000', 'isNeed': '1', 'isNeedForPurchase': '1', 'itemName': '包装外观', 'uuid': '32'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '内径（MM）', 'uuid': '9'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '材质', 'uuid': '34'}, {'categoryUuid': '30000', 'isNeed': '2', 'isNeedForPurchase': '2', 'itemName': '颜色', 'uuid': '30'}], 'listQualificationTypes': [{'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '营业执照', 'qualificationTypeNo': '5', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '厂家授权书', 'qualificationTypeNo': '6', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '质量管理体系认证证书', 'qualificationTypeNo': '7', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '环境管理体系认证证书', 'qualificationTypeNo': '8', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '卫生许可证', 'qualificationTypeNo': '9', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '生产许可证', 'qualificationTypeNo': '10', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '职业健康疾病预防认证', 'qualificationTypeNo': '11', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '全国工业产品生产许可证', 'qualificationTypeNo': '12', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '测量管理体系认证证书', 'qualificationTypeNo': '13', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '制造计量器具许可证', 'qualificationTypeNo': '14', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '银行开户许可证', 'qualificationTypeNo': '15', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '特种设备制造许可证', 'qualificationTypeNo': '16', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': 'LA特种劳动防护用品安全标志证书', 'qualificationTypeNo': '17', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': 'MSDS化学品安全技术说明书', 'qualificationTypeNo': '18', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '排放污染物许可证', 'qualificationTypeNo': '19', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '商标注册证', 'qualificationTypeNo': '20', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': 'IS9000认证', 'qualificationTypeNo': '21', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': 'IS9002认证', 'qualificationTypeNo': '22', 'relType': '2', 'selected': False, 'uuid': None}, {'_checked': True, 'cateUuid': None, 'mustHave': '1', 'qualificationTypeName': '检验报告', 'qualificationTypeNo': '1', 'relType': '1', 'selected': True, 'uuid': None}, {'_checked': False, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '材质单', 'qualificationTypeNo': '2', 'relType': '1', 'selected': False, 'uuid': None}, {'_checked': True, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '合格证', 'qualificationTypeNo': '3', 'relType': '1', 'selected': True, 'uuid': None}, {'_checked': True, 'cateUuid': None, 'mustHave': '2', 'qualificationTypeName': '3C认证', 'qualificationTypeNo': '4', 'relType': '1', 'selected': True, 'uuid': None}], 'parentUuid': '21000', 'position': 1010101, 'productSceneCategoryNames': '通用模块', 'productSceneCategoryUuids': ['10014'], 'productTemplateNames': '安全带', 'productTemplateUuids': ['10000'], 'state': '1', 'uuid': '9bd646d913e040e2ae7b53362666ea5c'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '204'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/updateFromNoPass'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.retData', None]}, {'eq': ['content.timestamp', 0]}]}" ]
         }, {
           "name" : "test_query[info15]",
-          "uid" : "dd470286daa656cf",
+          "uid" : "21f8f76ffdbb58b5",
           "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "broken",
+          "status" : "failed",
           "time" : {
-            "start" : 1641821123979,
-            "stop" : 1641821124153,
-            "duration" : 174
+            "start" : 1641908197968,
+            "stop" : 1641908198024,
+            "duration" : 56
           },
-          "flaky" : true,
+          "flaky" : false,
           "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/getPager', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'nowPage': 1, 'pageShow': 10, 'searchParam': '[{\"name\":\"reviewState\",\"value\":\"1\"},{\"name\":\"reviewState_q\",\"value\":\"EQ\"},{\"name\":\"categoryNo\",\"value\":\"\"},{\"name\":\"categoryName\",\"value\":\"安全带\"},{\"name\":\"state\",\"value\":\"\"},{\"name\":\"categoryNo_q\",\"value\":\"Like\"},{\"name\":\"categoryName_q\",\"value\":\"Like\"},{\"name\":\"state_q\",\"value\":\"Like\"}]'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '203'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/getPager'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
         }, {
           "name" : "test_query[info16]",
-          "uid" : "9cdbbb390072a271",
+          "uid" : "1f23c58323708582",
           "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "broken",
+          "status" : "failed",
           "time" : {
-            "start" : 1641821124179,
-            "stop" : 1641821124308,
-            "duration" : 129
+            "start" : 1641908198032,
+            "stop" : 1641908198080,
+            "duration" : 48
           },
-          "flaky" : true,
+          "flaky" : false,
           "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid', 'request': {'data': {'platCategoryUuid': '9bd646d913e040e2ae7b53362666ea5c'}, 'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'method': 'POST', 'params': {'buttonId': '130', 'menuId': '203'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
         }, {
           "name" : "test_query[info17]",
-          "uid" : "6a2bec37c8964daf",
+          "uid" : "ebc5c097dcd82a1c",
           "parentUid" : "a9613829243db7cda52bc9cb6d252a54",
-          "status" : "broken",
+          "status" : "failed",
           "time" : {
-            "start" : 1641821124335,
-            "stop" : 1641821124860,
-            "duration" : 525
+            "start" : 1641908198087,
+            "stop" : 1641908198141,
+            "duration" : 54
           },
-          "flaky" : true,
+          "flaky" : false,
           "parameters" : [ "{'name': '/sysback/category/productplatformcategoryaudit/auditPass', 'request': {'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'json': {'uuids': '9bd646d913e040e2ae7b53362666ea5c'}, 'method': 'POST', 'params': {'auditNote': '', 'buttonId': '130', 'menuId': '203', 'uuids': '9bd646d913e040e2ae7b53362666ea5c'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/auditPass'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.retData', None]}, {'eq': ['content.timestamp', 0]}]}" ]
         } ],
         "uid" : "a9613829243db7cda52bc9cb6d252a54"
@@ -233,12 +233,12 @@
         "name" : "TestSend",
         "children" : [ {
           "name" : "测试",
-          "uid" : "7eff1e050c50578f",
+          "uid" : "a95d938b38e8f7c2",
           "parentUid" : "ca720a3ac179ae19a4e222fdd7e54f69",
           "status" : "passed",
           "time" : {
-            "start" : 1641821124872,
-            "stop" : 1641821124872,
+            "start" : 1641908198149,
+            "stop" : 1641908198149,
             "duration" : 0
           },
           "flaky" : false,

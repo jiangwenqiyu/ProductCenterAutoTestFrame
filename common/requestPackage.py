@@ -1,14 +1,23 @@
 import requests
 
+from common.logPackage import MyLog
+
 
 class RequestSend:
 
-    def request(self, method, url, header, **kwargs):
-        with open('record.txt', 'a') as f:
-            f.write(method + '\n' + url + '\n' + str(header) + '\n' + str(kwargs))
+    myLog = MyLog('testLog', file = 'autoTestLog.log')
 
+
+
+    def request(self, method, url, header, **kwargs):
+        log = list()
+        log.append(method)
+        log.append(url)
+        log.append(kwargs)
+        self.myLog.debug(log)
         res = requests.request(method, url, headers = header, **kwargs)
         return res
+
 
 
 

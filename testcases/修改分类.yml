@@ -25,6 +25,7 @@ teststeps:
     -   eq:
         - retStatus
         - '1'
+    title: 查询分类
 
 -   name: /sysback/category/productplatformcategory/getPager
     request:
@@ -69,6 +70,7 @@ teststeps:
             buttonId: '2'
             menuId: '202'
         url: http://product.pre.xinfangsheng.com/sysback/category/productplatformcategory/getPlatCategoryByUuid
+
     validate:
     -   eq:
         - retStatus

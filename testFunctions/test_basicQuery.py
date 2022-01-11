@@ -1,5 +1,7 @@
 import pytest
 import json
+import allure
+from allure_commons._allure import Dynamic
 
 from common.requestPackage import RequestSend
 from common.yaml_util import YamlUtil
@@ -11,6 +13,9 @@ class TestBasicQuery:
 
     @pytest.mark.parametrize('info', YamlUtil().read_yaml('修改分类.yml')['teststeps'])
     def test_query(self, info):
+        '''查询分类注释'''
+        self.requests.myLog.debug('***************开始测试****************')
+        # Dynamic.title('查询四级类')
         method = info['request']['method'].lower()
         url = info['request']['url']
         header = info['request']['headers']
@@ -27,6 +32,7 @@ class TestBasicQuery:
 
 
         res = self.requests.request(method, url, header, data = data, params = param)
+        self.requests.myLog.debug('返回值: {}'.format(res.text))
         for val in info['validate']:
             for k in val:
                 if k == 'eq':
@@ -34,5 +40,6 @@ class TestBasicQuery:
                 elif k == 'in':
                     assert val[k][0] in res.text
 
+        self.requests.myLog.debug('***************测试结束****************')
 
 

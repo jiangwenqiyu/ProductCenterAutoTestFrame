@@ -4,10 +4,10 @@
     "uid" : "e44900f7e9995161493d8b618c4273f4",
     "name" : "testFunctions",
     "statistic" : {
-      "failed" : 2,
-      "broken" : 13,
+      "failed" : 18,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 19
     }
