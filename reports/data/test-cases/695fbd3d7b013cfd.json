@@ -1,0 +1,154 @@
+{
+  "uid" : "695fbd3d7b013cfd",
+  "name" : "test_query[info13]",
+  "fullName" : "testFunctions.test_basicQuery.TestBasicQuery#test_query",
+  "historyId" : "6056b812e0f1a7f3dfe413749c5847d2",
+  "time" : {
+    "start" : 1641821119705,
+    "stop" : 1641821119954,
+    "duration" : 249
+  },
+  "status" : "broken",
+  "statusMessage" : "KeyError: 'headers.Content-Type'",
+  "statusTrace" : "self = <testFunctions.test_basicQuery.TestBasicQuery object at 0x000001905206BDD8>\ninfo = {'name': '/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid', 'request': {'data': {'platCategoryUui...ion/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}\n\n    @pytest.mark.parametrize('info', YamlUtil().read_yaml('修改分类.yml')['teststeps'])\n    def test_query(self, info):\n        method = info['request']['method'].lower()\n        url = info['request']['url']\n        header = info['request']['headers']\n        header['cookie'] = 'uc_token=62d031124c47483da282849da1955475'\n        data = None\n        param = None\n        for key in info['request']:\n            if key == 'json':\n                data = json.dumps(info['request']['json'])\n            elif key == 'data':\n                data = info['request']['data']\n            elif key == 'params':\n                param = info['request']['params']\n    \n    \n        res = self.requests.request(method, url, header, data = data, params = param)\n        for val in info['validate']:\n            for k in val:\n                if k == 'eq':\n>                   assert res.json()[val[k][0]] == val[k][1]\nE                   KeyError: 'headers.Content-Type'\n\ntestFunctions\\test_basicQuery.py:33: KeyError",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testFunctions"
+  }, {
+    "name" : "suite",
+    "value" : "test_basicQuery"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBasicQuery"
+  }, {
+    "name" : "host",
+    "value" : "MM-202009090019"
+  }, {
+    "name" : "thread",
+    "value" : "4760-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testFunctions.test_basicQuery"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "info",
+    "value" : "{'name': '/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid', 'request': {'data': {'platCategoryUuid': '9bd646d913e040e2ae7b53362666ea5c'}, 'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '204'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d795acfdde29c823",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'status_code'",
+      "time" : {
+        "start" : 1641820988121,
+        "stop" : 1641820988398,
+        "duration" : 277
+      }
+    }, {
+      "uid" : "702c28952845885b",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 0",
+      "time" : {
+        "start" : 1641820765843,
+        "stop" : 1641820766223,
+        "duration" : 380
+      }
+    }, {
+      "uid" : "85140184442b804",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'data' is an invalid keyword argument for this function",
+      "time" : {
+        "start" : 1641820716137,
+        "stop" : 1641820716137,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "46479e36f1ed1df6",
+      "status" : "broken",
+      "statusDetails" : "ValueError: invalid mode: 'as '",
+      "time" : {
+        "start" : 1641820686540,
+        "stop" : 1641820686540,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "96c992b2a33f6810",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() missing 1 required positional argument: 'header'",
+      "time" : {
+        "start" : 1641820593613,
+        "stop" : 1641820593613,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a775c1545c7ff1f5",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() missing 1 required positional argument: 'header'",
+      "time" : {
+        "start" : 1641820557251,
+        "stop" : 1641820557251,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a97d520b0bbbfcf2",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() missing 1 required positional argument: 'header'",
+      "time" : {
+        "start" : 1641820383358,
+        "stop" : 1641820383358,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e3c49f12e1b39cf4",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() missing 1 required positional argument: 'header'",
+      "time" : {
+        "start" : 1641820063033,
+        "stop" : 1641820063033,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1c1aaf624544041d",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() missing 1 required positional argument: 'header'",
+      "time" : {
+        "start" : 1641820006871,
+        "stop" : 1641820006871,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "395d79a6e3c11150",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() missing 1 required positional argument: 'header'",
+      "time" : {
+        "start" : 1641819912643,
+        "stop" : 1641819912643,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "695fbd3d7b013cfd.json",
+  "parameterValues" : [ "{'name': '/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid', 'request': {'data': {'platCategoryUuid': '9bd646d913e040e2ae7b53362666ea5c'}, 'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '204'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/getPlatCategoryByUuid'}, 'validate': [{'eq': ['retStatus', '1']}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
+}

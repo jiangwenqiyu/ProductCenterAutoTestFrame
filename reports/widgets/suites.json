@@ -4,12 +4,12 @@
     "uid" : "e44900f7e9995161493d8b618c4273f4",
     "name" : "testFunctions",
     "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
+      "failed" : 2,
+      "broken" : 13,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 1
+      "total" : 19
     }
   } ]
 }

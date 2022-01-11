@@ -1,0 +1,58 @@
+{
+  "uid" : "ea140ec794d0c53c",
+  "name" : "test_query[info8]",
+  "fullName" : "testFunctions.test_basicQuery.TestBasicQuery#test_query",
+  "historyId" : "7c5bd82ae6ee5e07d96a5870e0a95662",
+  "time" : {
+    "start" : 1641820716081,
+    "stop" : 1641820716082,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: 'data' is an invalid keyword argument for this function",
+  "statusTrace" : "self = <testFunctions.test_basicQuery.TestBasicQuery object at 0x0000023A4F8892B0>\ninfo = {'name': '/sysback/category/productplatformcategory/getPlatCategoryByUuid', 'request': {'data': {'platCategoryUuid': '...ion/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}\n\n    @pytest.mark.parametrize('info', YamlUtil().read_yaml('修改分类.yml')['teststeps'])\n    def test_query(self, info):\n        method = info['request']['method'].lower()\n        url = info['request']['url']\n        header = info['request']['headers']\n        header['cookie'] = 'uc_token=62d031124c47483da282849da1955475'\n        data = None\n        param = None\n        for key in info['request']:\n            if key == 'json':\n                data = json.dumps(info['request']['json'])\n            elif key == 'data':\n                data = info['request']['data']\n            elif key == 'params':\n                param = info['request']['params']\n    \n    \n>       res = self.requests.request(method, url, header, data = data, params = param)\n\ntestFunctions\\test_basicQuery.py:29: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <common.requestPackage.RequestSend object at 0x0000023A4ECD2A58>\nmethod = 'post'\nurl = 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategory/getPlatCategoryByUuid'\nheader = {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHA...T 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', ...}\nkwargs = {'data': {'platCategoryUuid': '30000'}, 'params': {'buttonId': '2', 'menuId': '202'}}\nf = <_io.TextIOWrapper name='record.txt' mode='a' encoding='cp936'>\n\n    def request(self, method, url, header, **kwargs):\n        with open('record.txt', 'a') as f:\n>           f.write(method + '\\n' + url + '\\n' + str(header) + '\\n' + str(**kwargs))\nE           TypeError: 'data' is an invalid keyword argument for this function\n\ncommon\\requestPackage.py:8: TypeError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testFunctions"
+  }, {
+    "name" : "suite",
+    "value" : "test_basicQuery"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBasicQuery"
+  }, {
+    "name" : "host",
+    "value" : "MM-202009090019"
+  }, {
+    "name" : "thread",
+    "value" : "9340-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testFunctions.test_basicQuery"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "info",
+    "value" : "{'name': '/sysback/category/productplatformcategory/getPlatCategoryByUuid', 'request': {'data': {'platCategoryUuid': '30000'}, 'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '202'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategory/getPlatCategoryByUuid'}, 'validate': [{'eq': ['status_code', 200]}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ea140ec794d0c53c.json",
+  "parameterValues" : [ "{'name': '/sysback/category/productplatformcategory/getPlatCategoryByUuid', 'request': {'data': {'platCategoryUuid': '30000'}, 'headers': {'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ', 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'X-Token': 'undefined', 'token': 'undefined'}, 'method': 'POST', 'params': {'buttonId': '2', 'menuId': '202'}, 'url': 'http://product.pre.xinfangsheng.com/sysback/category/productplatformcategory/getPlatCategoryByUuid'}, 'validate': [{'eq': ['status_code', 200]}, {'eq': ['headers.Content-Type', 'application/json']}, {'eq': ['content.retStatus', '1']}, {'eq': ['content.retMessage', '']}, {'eq': ['content.timestamp', 0]}]}" ]
+}

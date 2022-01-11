@@ -1,11 +1,191 @@
 [ {
-  "uid" : "28ab7183eace957e",
+  "uid" : "a526b9c1dab5d16d",
+  "name" : "test_query[info6]",
+  "time" : {
+    "start" : 1641821118092,
+    "stop" : 1641821118236,
+    "duration" : 144
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "9cdbbb390072a271",
+  "name" : "test_query[info16]",
+  "time" : {
+    "start" : 1641821124179,
+    "stop" : 1641821124308,
+    "duration" : 129
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "81342bd1bff4fcd",
+  "name" : "test_query[info5]",
+  "time" : {
+    "start" : 1641821117931,
+    "stop" : 1641821118064,
+    "duration" : 133
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "76cf81917cf77bb9",
+  "name" : "test_query[info4]",
+  "time" : {
+    "start" : 1641821117751,
+    "stop" : 1641821117905,
+    "duration" : 154
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3db0588d5300deb3",
+  "name" : "test_query[info8]",
+  "time" : {
+    "start" : 1641821118792,
+    "stop" : 1641821118933,
+    "duration" : 141
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e4ec1f4bd3f0efc0",
+  "name" : "test_query[info12]",
+  "time" : {
+    "start" : 1641821119550,
+    "stop" : 1641821119677,
+    "duration" : 127
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "7eff1e050c50578f",
   "name" : "测试",
   "time" : {
-    "start" : 1641812440875,
-    "stop" : 1641812440875,
+    "start" : 1641821124872,
+    "stop" : 1641821124872,
     "duration" : 0
   },
   "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4128970a4538a705",
+  "name" : "test_query[info0]",
+  "time" : {
+    "start" : 1641821116703,
+    "stop" : 1641821117054,
+    "duration" : 351
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "695fbd3d7b013cfd",
+  "name" : "test_query[info13]",
+  "time" : {
+    "start" : 1641821119705,
+    "stop" : 1641821119954,
+    "duration" : 249
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6a2bec37c8964daf",
+  "name" : "test_query[info17]",
+  "time" : {
+    "start" : 1641821124335,
+    "stop" : 1641821124860,
+    "duration" : 525
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "dc67201dd128159f",
+  "name" : "test_query[info1]",
+  "time" : {
+    "start" : 1641821117066,
+    "stop" : 1641821117296,
+    "duration" : 230
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a813b6319ca97ea",
+  "name" : "test_query[info10]",
+  "time" : {
+    "start" : 1641821119114,
+    "stop" : 1641821119339,
+    "duration" : 225
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "d891b6c0370bf66d",
+  "name" : "test_query[info2]",
+  "time" : {
+    "start" : 1641821117303,
+    "stop" : 1641821117544,
+    "duration" : 241
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a81bdcfe5352cde",
+  "name" : "test_query[info11]",
+  "time" : {
+    "start" : 1641821119354,
+    "stop" : 1641821119528,
+    "duration" : 174
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e568992eaa01f60c",
+  "name" : "test_query[info3]",
+  "time" : {
+    "start" : 1641821117552,
+    "stop" : 1641821117685,
+    "duration" : 133
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "efd6c6a337f1c7f2",
+  "name" : "test_query[info9]",
+  "time" : {
+    "start" : 1641821118960,
+    "stop" : 1641821119104,
+    "duration" : 144
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd470286daa656cf",
+  "name" : "test_query[info15]",
+  "time" : {
+    "start" : 1641821123979,
+    "stop" : 1641821124153,
+    "duration" : 174
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "82d06126ffc4d12a",
+  "name" : "test_query[info14]",
+  "time" : {
+    "start" : 1641821119977,
+    "stop" : 1641821123949,
+    "duration" : 3972
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "17360f3234208e82",
+  "name" : "test_query[info7]",
+  "time" : {
+    "start" : 1641821118269,
+    "stop" : 1641821118776,
+    "duration" : 507
+  },
+  "status" : "broken",
   "severity" : "normal"
 } ]
