@@ -25,7 +25,8 @@ teststeps:
     -   eq:
         - retStatus
         - '1'
-    title: 查询分类
+    title: 查询全部分类
+
 
 -   name: /sysback/category/productplatformcategory/getPager
     request:
@@ -45,6 +46,7 @@ teststeps:
             buttonId: '2'
             menuId: '202'
         url: http://product.pre.xinfangsheng.com/sysback/category/productplatformcategory/getPager
+    title: 查询指定分类
     validate:
     -   eq:
         - retStatus
@@ -70,13 +72,14 @@ teststeps:
             buttonId: '2'
             menuId: '202'
         url: http://product.pre.xinfangsheng.com/sysback/category/productplatformcategory/getPlatCategoryByUuid
-
+    title: 获取编辑页面
     validate:
     -   eq:
         - retStatus
         - '1'
 
 -   name: /sysback/category/productplatformcategoryaudit/updatePlatCategory
+    title: 提交编辑页面
     request:
         headers:
             Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2MjA4MDU5MTYsImF1dGhvcml0aWVzIjpbImFhIl0sImp0aSI6ImJjYzkwNDBkLTA0NTMtNDg5ZS1iMTM5LWEzZGU2MjQzZmJlMyIsImNsaWVudF9pZCI6ImFkbWluIiwidG9rZW4iOiJsb2dpbl90b2tlbl9hYmMzMjNjNmQwZWY0YTg2OWVhYjg0NjZmMTQ5MDgwNiJ9.GGr40pJ6GuZYkoeYPrFwJJDMAcmAnbzV1z8E3siyjtMM-AMkJA8RxeMz0k457o7WTGdHmGKprSjxll0n4dEfaUusHqRWqnZ9ApDyMqwmL_3DE6hieDpd09-ScpTZ2Ptl8JFOrSws7aT7q8W4QMUvhFA501bV8rMLGWyXkWWFIz6fzRbS7_pNJzogk1a8UfYAqjw25Mvh5XyEjvCpi0szty-VFPeWDTNfuQavQ0oQ68Cfra3K0Wa_ZsoTzeLVOoXSZgLx7iEMQhGHLGvPRAmv15QZfbUeCPKIbYK1o9IvjEIM2v-aEKMSOX8OdLSUgnaBd-IFu3dRFuXP2_5G0D1uvQ
