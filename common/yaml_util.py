@@ -3,10 +3,16 @@ import yaml
 
 class YamlUtil:
 
-    def read_yaml(self, name):
-        with open('./testcases/' + name, 'r', encoding='utf-8') as f:
-            data = yaml.load(f, yaml.FullLoader)
-            return data
+    def read_yaml(self, name, path = None):
+        if path:
+            with open(path + name, 'r', encoding='utf-8') as f:
+                data = yaml.load(f, yaml.FullLoader)
+                return data
+
+        else:
+            with open('./testcases/' + name, 'r', encoding='utf-8') as f:
+                data = yaml.load(f, yaml.FullLoader)
+                return data
 
 
     def write_yaml(self, name, data):
@@ -21,6 +27,8 @@ class YamlUtil:
     def clear_yaml(self, name):
         with open('./testcases/' + name, 'w', encoding='utf-8') as f:
             f.truncate()
+
+
 
 
 
