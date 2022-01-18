@@ -1,0 +1,134 @@
+{
+  "uid" : "a7fadab6ee04f493",
+  "name" : "属性值分类管理编辑",
+  "fullName" : "testFunctions.test_basicQuery.TestBasicQuery#test_query",
+  "historyId" : "feadef8c9dab49de96c4d7133f7b0766",
+  "time" : {
+    "start" : 1642495765191,
+    "stop" : 1642495766251,
+    "duration" : 1060
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址:http://product.pre.xinfangsheng.com/sysback/template/producttemplateattrvaluecategory/baseGetByUuid\n",
+      "time" : {
+        "start" : 1642495766205,
+        "stop" : 1642495766205,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求参数:data:{'uuid': '2100010002'}\nparam:{'menuId': '218', 'buttonId': '3'}\n",
+      "time" : {
+        "start" : 1642495766205,
+        "stop" : 1642495766205,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头:{'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/x-www-form-urlencoded', 'cookie': 'uc_token=e957c609b1554018ae97fe1dc86e9cf1'}\n",
+      "time" : {
+        "start" : 1642495766206,
+        "stop" : 1642495766247,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "返回参数:{\"retStatus\":\"1\",\"retMessage\":\"\",\"retData\":{\"uuid\":\"2100010002\",\"oper\":\"6674\",\"opeTime\":\"2022-01-13 22:36:52\",\"delFlag\":1,\"createOper\":\"6535\",\"createOpeTime\":\"2021-12-29 13:01:34\",\"version\":1,\"operationNumber\":null,\"orgId\":\"1002N1100000000126VI\",\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"categoryName\":\"阿萨姆奶茶\"},\"timestamp\":0}",
+      "time" : {
+        "start" : 1642495766249,
+        "stop" : 1642495766251,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试接口集"
+  }, {
+    "name" : "feature",
+    "value" : "基础接口探活测试"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=2, reruns_delay=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testFunctions"
+  }, {
+    "name" : "suite",
+    "value" : "test_basicQuery"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBasicQuery"
+  }, {
+    "name" : "host",
+    "value" : "XTZJ-20211021CS"
+  }, {
+    "name" : "thread",
+    "value" : "6520-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testFunctions.test_basicQuery"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=2, reruns_delay=2)" ]
+  },
+  "source" : "a7fadab6ee04f493.json",
+  "parameterValues" : [ ]
+}

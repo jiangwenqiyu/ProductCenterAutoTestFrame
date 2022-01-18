@@ -1,0 +1,134 @@
+{
+  "uid" : "45f2385e45fcfc38",
+  "name" : "品类审核未通过查询",
+  "fullName" : "testFunctions.test_basicQuery.TestBasicQuery#test_query",
+  "historyId" : "0216d085720b023c137080b202cf83e5",
+  "time" : {
+    "start" : 1642495688318,
+    "stop" : 1642495689512,
+    "duration" : 1194
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址:http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/getPager\n",
+      "time" : {
+        "start" : 1642495689323,
+        "stop" : 1642495689323,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求参数:data:{\"nowPage\": 1, \"pageShow\": 10, \"searchParam\": \"[{\\\"name\\\":\\\"reviewState\\\",\\\"value\\\":\\\"3\\\"},{\\\"name\\\":\\\"reviewState_q\\\",\\\"value\\\":\\\"EQ\\\"},{\\\"name\\\":\\\"categoryNo\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"categoryName\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"state\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"categoryNo_q\\\",\\\"value\\\":\\\"Like\\\"},{\\\"name\\\":\\\"categoryName_q\\\",\\\"value\\\":\\\"Like\\\"},{\\\"name\\\":\\\"state_q\\\",\\\"value\\\":\\\"Like\\\"}]\"}\nparam:{'menuId': '204', 'buttonId': '2'}\n",
+      "time" : {
+        "start" : 1642495689323,
+        "stop" : 1642495689323,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头:{'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json;charset=UTF-8', 'cookie': 'uc_token=e957c609b1554018ae97fe1dc86e9cf1'}\n",
+      "time" : {
+        "start" : 1642495689323,
+        "stop" : 1642495689444,
+        "duration" : 121
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "返回参数:{\"retStatus\":\"1\",\"retMessage\":\"\",\"retData\":{\"pageShow\":10,\"nowPage\":1,\"totalNum\":5,\"totalPage\":1,\"results\":[{\"uuid\":\"bf9eacadbb544ebabcaa26b2482d21a1\",\"oper\":\"6674\",\"opeTime\":\"2022-01-13 22:27:05\",\"delFlag\":1,\"createOper\":\"6674\",\"createOpeTime\":\"2022-01-13 22:27:05\",\"version\":21,\"operationNumber\":null,\"orgId\":\"1002N11000000000HS44\",\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"categoryName\":\"吸水袋\",\"categoryNo\":\"99999\",\"categoryType\":\"3\",\"categoryNote\":\"防洪用品\",\"fullpath\":\"001006001002003000000000000000000\",\"parentUuid\":\"21037\",\"parentUuidStr\":\"安防>防汛救灾>防洪排涝\",\"position\":1,\"auditNote\":\"111\",\"state\":\"1\",\"categoryUuid\":\"2100000034\",\"reviewState\":\"3\",\"isPriceSensitive\":\"2\",\"isMetal\":\"2\",\"batchOrderPrice\":5000.0,\"isKey\":\"2\",\"categoryProductType\":\"3\",\"dangerousOrder\":\"\",\"editStatus\":\"2\",\"editStatusStr\":\"编辑\",\"tagCategoryNames\":null,\"brandNames\":null,\"brandUuids\":null,\"productTemplateNames\":null,\"productTemplateUuids\":null,\"acceptItemNames\":null,\"acceptItemUuids\":null,\"listAcceptItems\":null,\"classificationNames\":null,\"classificationUuids\":null,\"productSceneCategoryNames\":null,\"productSceneCategoryUuids\":null,\"listQualificationTypes\":null,\"fullNames\":null,\"haveRel\":null,\"levelNum\":\"4\",\"templateUuids\":null,\"subList\":null},{\"uuid\":\"0061a130552e45d998f010fc3a56ee9f\",\"oper\":\"-1\",\"opeTime\":\"2021-12-09 18:08:22\",\"delFlag\":1,\"createOper\":\"-1\",\"createOpeTime\":\"2021-12-09 17:01:34\",\"version\":3,\"operationNumber\":null,\"orgId\":null,\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"categoryName\":\"充电式圆锯\",\"categoryNo\":\"13010105\",\"categoryType\":\"3\",\"categoryNote\":\"11\",\"fullpath\":\"001017001001005000000000000000000\",\"parentUuid\":\"21417\",\"parentUuidStr\":\"动力工具>电动工具>充电电动工具\",\"position\":13010105,\"auditNote\":\"ee\",\"state\":\"1\",\"categoryUuid\":\"31350\",\"reviewState\":\"3\",\"isPriceSensitive\":\"2\",\"isMetal\":\"2\",\"batchOrderPrice\":0.0,\"isKey\":\"1\",\"categoryProductType\":\"2\",\"dangerousOrder\":\"0\",\"editStatus\":\"2\",\"editStatusStr\":\"编辑\",\"tagCategoryNames\":null,\"brandNames\":null,\"brandUuids\":null,\"productTemplateNames\":null,\"productTemplateUuids\":null,\"acceptItemNames\":null,\"acceptItemUuids\":null,\"listAcceptItems\":null,\"classificationNames\":null,\"classificationUuids\":null,\"productSceneCategoryNames\":null,\"productSceneCategoryUuids\":null,\"listQualificationTypes\":null,\"fullNames\":null,\"haveRel\":null,\"levelNum\":\"4\",\"templateUuids\":null,\"subList\":null},{\"uuid\":\"fbfccf3058644d82a25ea0358de49959\",\"oper\":\"-1\",\"opeTime\":\"2021-12-09 15:18:47\",\"delFlag\":1,\"createOper\":\"-1\",\"createOpeTime\":\"2021-12-09 15:18:47\",\"version\":1,\"operationNumber\":null,\"orgId\":null,\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"categoryName\":\"充电式圆锯\",\"categoryNo\":\"13010105\",\"categoryType\":\"3\",\"categoryNote\":\"\",\"fullpath\":\"001017001001005000000000000000000\",\"parentUuid\":\"21417\",\"parentUuidStr\":\"动力工具>电动工具>充电电动工具\",\"position\":13010105,\"auditNote\":\"1\",\"state\":\"1\",\"categoryUuid\":\"31350\",\"reviewState\":\"3\",\"isPriceSensitive\":\"2\",\"isMetal\":\"2\",\"batchOrderPrice\":0.0,\"isKey\":\"1\",\"categoryProductType\":\"2\",\"dangerousOrder\":\"0\",\"editStatus\":\"2\",\"editStatusStr\":\"编辑\",\"tagCategoryNames\":null,\"brandNames\":null,\"brandUuids\":null,\"productTemplateNames\":null,\"productTemplateUuids\":null,\"acceptItemNames\":null,\"acceptItemUuids\":null,\"listAcceptItems\":null,\"classificationNames\":null,\"classificationUuids\":null,\"productSceneCategoryNames\":null,\"productSceneCategoryUuids\":null,\"listQualificationTypes\":null,\"fullNames\":null,\"haveRel\":null,\"levelNum\":\"4\",\"templateUuids\":null,\"subList\":null},{\"uuid\":\"fd663d0e0160473fa2256a839cc0623d\",\"oper\":\"-1\",\"opeTime\":\"2021-12-09 15:16:02\",\"delFlag\":1,\"createOper\":\"-1\",\"createOpeTime\":\"2021-12-09 15:16:02\",\"version\":1,\"operationNumber\":null,\"orgId\":null,\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"categoryName\":\"充电式圆锯\",\"categoryNo\":\"13010105\",\"categoryType\":\"3\",\"categoryNote\":\"\",\"fullpath\":\"001017001001005000000000000000000\",\"parentUuid\":\"21417\",\"parentUuidStr\":\"动力工具>电动工具>充电电动工具\",\"position\":13010105,\"auditNote\":\"11\",\"state\":\"1\",\"categoryUuid\":\"31350\",\"reviewState\":\"3\",\"isPriceSensitive\":\"2\",\"isMetal\":\"2\",\"batchOrderPrice\":0.0,\"isKey\":\"1\",\"categoryProductType\":\"2\",\"dangerousOrder\":\"0\",\"editStatus\":\"2\",\"editStatusStr\":\"编辑\",\"tagCategoryNames\":null,\"brandNames\":null,\"brandUuids\":null,\"productTemplateNames\":null,\"productTemplateUuids\":null,\"acceptItemNames\":null,\"acceptItemUuids\":null,\"listAcceptItems\":null,\"classificationNames\":null,\"classificationUuids\":null,\"productSceneCategoryNames\":null,\"productSceneCategoryUuids\":null,\"listQualificationTypes\":null,\"fullNames\":null,\"haveRel\":null,\"levelNum\":\"4\",\"templateUuids\":null,\"subList\":null},{\"uuid\":\"cd13e566cfd84097be4092d20b22e831\",\"oper\":\"14380\",\"opeTime\":\"2021-11-03 14:16:20\",\"delFlag\":1,\"createOper\":\"14380\",\"createOpeTime\":\"2021-11-03 14:16:20\",\"version\":1,\"operationNumber\":null,\"orgId\":\"1002N11000000000HS3X\",\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"categoryName\":\"泽林分类一\",\"categoryNo\":\"66\",\"categoryType\":\"1\",\"categoryNote\":\"\",\"fullpath\":\"\",\"parentUuid\":\"systemUuid\",\"parentUuidStr\":\"\",\"position\":0,\"auditNote\":\"2\",\"state\":\"1\",\"categoryUuid\":\"2100000022\",\"reviewState\":\"3\",\"isPriceSensitive\":\"\",\"isMetal\":\"\",\"batchOrderPrice\":0.0,\"isKey\":\"2\",\"categoryProductType\":\"\",\"dangerousOrder\":\"\",\"editStatus\":\"1\",\"editStatusStr\":\"新增\",\"tagCategoryNames\":null,\"brandNames\":null,\"brandUuids\":null,\"productTemplateNames\":null,\"productTemplateUuids\":null,\"acceptItemNames\":null,\"acceptItemUuids\":null,\"listAcceptItems\":null,\"classificationNames\":null,\"classificationUuids\":null,\"productSceneCategoryNames\":null,\"productSceneCategoryUuids\":null,\"listQualificationTypes\":null,\"fullNames\":null,\"haveRel\":null,\"levelNum\":\"1\",\"templateUuids\":null,\"subList\":null}],\"fromNum\":0},\"timestamp\":0}",
+      "time" : {
+        "start" : 1642495689473,
+        "stop" : 1642495689512,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试接口集"
+  }, {
+    "name" : "feature",
+    "value" : "基础接口探活测试"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=2, reruns_delay=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testFunctions"
+  }, {
+    "name" : "suite",
+    "value" : "test_basicQuery"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBasicQuery"
+  }, {
+    "name" : "host",
+    "value" : "XTZJ-20211021CS"
+  }, {
+    "name" : "thread",
+    "value" : "6520-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testFunctions.test_basicQuery"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=2, reruns_delay=2)" ]
+  },
+  "source" : "45f2385e45fcfc38.json",
+  "parameterValues" : [ ]
+}

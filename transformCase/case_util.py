@@ -25,7 +25,19 @@ class CaseUtil:
                 path += '/' + i
 
             method = obj['request']['method']
-            req_data = obj['request']['postData']
+
+            req_data = obj['request']['postData'].get('text')
+            if req_data:
+                req_data = json.loads(req_data)
+                temp['reqType'] = 'json'
+            else:
+                req_data = dict()
+                temp['reqType'] = 'form'
+                temp_data = obj['request']['postData'].get('params')
+                for i in temp_data:
+                    req_data[i['name']] = i['value']
+
+
             param = dict()
             for i in obj['request']['queryString']:
                 param[i['name']] = i['value']
@@ -43,7 +55,7 @@ class CaseUtil:
             temp['data'] = req_data
             temp['param'] = param
             temp['method'] = method
-            temp['validate'] = res
+            temp['validate'] = json.loads(res)
 
             self.cases.append(temp)
             # print(data)
@@ -65,7 +77,7 @@ class CaseUtil:
 
         with open('../configs/envConfig.yml', 'r') as f:
             file = yaml.load(f, Loader=yaml.FullLoader)
-
+        print(file['fangzhen']['db_link'], file['fangzhen']['db_user'], file['fangzhen']['db_pass'])
         con = pymysql.connect(host=file['fangzhen']['db_link'], user=file['fangzhen']['db_user'], password=file['fangzhen']['db_pass'], database=file['fangzhen']['db_database'])
         cur = con.cursor()
 

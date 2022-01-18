@@ -1,0 +1,162 @@
+{
+  "uid" : "e1d7c55de56dbc44",
+  "name" : "属性值分类管理提交",
+  "fullName" : "testFunctions.test_basicQuery.TestBasicQuery#test_query",
+  "historyId" : "245aa2fae7ffe6a80cf5f83e21ebb44b",
+  "time" : {
+    "start" : 1642495772424,
+    "stop" : 1642495773495,
+    "duration" : 1071
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '2' == '1'\n  - 1\n  + 2",
+  "statusTrace" : "self = <testFunctions.test_basicQuery.TestBasicQuery object at 0x0000025E2730F860>\ninfo = {'data': {'areaNo': None, 'buttonId': None, 'categoryName': '阿萨姆奶茶', 'createOpeTime': '2021-12-29 13:01:34', ...}, 'he...son;charset=UTF-8', 'cookie': 'uc_token=e957c609b1554018ae97fe1dc86e9cf1'}, 'method': 'POST', 'name': '属性值分类管理提交', ...}\n\n    @allure.story('测试接口集')\n    @pytest.mark.parametrize('info', DealTest().getCases(**getDbInfo()))\n    @pytest.mark.flaky(reruns=2, reruns_delay=2)\n    def test_query(self, info):\n        time.sleep(1)\n        Dynamic.title(info['name'])\n    \n        method = info['method'].lower()\n        url = productEnv.host + info['path']\n        header = info['header']\n        header['cookie'] = f'uc_token={productEnv.token}'\n        reqType = info['reqType']\n        if reqType == 'json':\n            data = json.dumps(info['data'])\n        else:\n            data = info['data']\n        param = info['param']\n    \n    \n        with allure.step('请求地址:{}\\n'.format(url)):\n            pass\n        with allure.step('请求参数:data:{}\\nparam:{}\\n'.format(data, param)):\n            pass\n        with allure.step('请求头:{}\\n'.format(header)):\n            res = self.requests.request(method, url, header, data = data, params = param)\n    \n        with allure.step('返回参数:{}'.format(res.text)):\n            self.requests.myLog.debug('返回值: {}'.format(res.text))\n            assert res.status_code == 200\n>           assert res.json()['retStatus'] == '1'\nE           AssertionError: assert '2' == '1'\nE             - 1\nE             + 2\n\ntestFunctions\\test_basicQuery.py:59: AssertionError",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '2' == '1'\n  - 1\n  + 2",
+    "statusTrace" : "self = <testFunctions.test_basicQuery.TestBasicQuery object at 0x0000025E2730F860>\ninfo = {'data': {'areaNo': None, 'buttonId': None, 'categoryName': '阿萨姆奶茶', 'createOpeTime': '2021-12-29 13:01:34', ...}, 'he...son;charset=UTF-8', 'cookie': 'uc_token=e957c609b1554018ae97fe1dc86e9cf1'}, 'method': 'POST', 'name': '属性值分类管理提交', ...}\n\n    @allure.story('测试接口集')\n    @pytest.mark.parametrize('info', DealTest().getCases(**getDbInfo()))\n    @pytest.mark.flaky(reruns=2, reruns_delay=2)\n    def test_query(self, info):\n        time.sleep(1)\n        Dynamic.title(info['name'])\n    \n        method = info['method'].lower()\n        url = productEnv.host + info['path']\n        header = info['header']\n        header['cookie'] = f'uc_token={productEnv.token}'\n        reqType = info['reqType']\n        if reqType == 'json':\n            data = json.dumps(info['data'])\n        else:\n            data = info['data']\n        param = info['param']\n    \n    \n        with allure.step('请求地址:{}\\n'.format(url)):\n            pass\n        with allure.step('请求参数:data:{}\\nparam:{}\\n'.format(data, param)):\n            pass\n        with allure.step('请求头:{}\\n'.format(header)):\n            res = self.requests.request(method, url, header, data = data, params = param)\n    \n        with allure.step('返回参数:{}'.format(res.text)):\n            self.requests.myLog.debug('返回值: {}'.format(res.text))\n            assert res.status_code == 200\n>           assert res.json()['retStatus'] == '1'\nE           AssertionError: assert '2' == '1'\nE             - 1\nE             + 2\n\ntestFunctions\\test_basicQuery.py:59: AssertionError",
+    "steps" : [ {
+      "name" : "请求地址:http://product.pre.xinfangsheng.com/sysback/template/producttemplateattrvaluecategory/baseUpdate\n",
+      "time" : {
+        "start" : 1642495773426,
+        "stop" : 1642495773426,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求参数:data:{\"oper\": \"6535\", \"uuid\": \"2100010002\", \"orgId\": \"1002N1100000000126VI\", \"areaNo\": null, \"menuId\": null, \"delFlag\": 1, \"opeTime\": \"2021-12-29 13:01:34\", \"version\": 0, \"buttonId\": null, \"hrAreaId\": null, \"sortName\": \"opeTime\", \"sortType\": \"desc\", \"createOper\": \"6535\", \"loginUserId\": null, \"categoryName\": \"\\u963f\\u8428\\u59c6\\u5976\\u8336\", \"mapCondition\": {}, \"createOpeTime\": \"2021-12-29 13:01:34\", \"operationNumber\": null, \"hrDepartmentNumber\": null}\nparam:{'menuId': '218', 'buttonId': '3'}\n",
+      "time" : {
+        "start" : 1642495773426,
+        "stop" : 1642495773426,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头:{'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json;charset=UTF-8', 'cookie': 'uc_token=e957c609b1554018ae97fe1dc86e9cf1'}\n",
+      "time" : {
+        "start" : 1642495773426,
+        "stop" : 1642495773489,
+        "duration" : 63
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "返回参数:{\"retStatus\":\"2\",\"retMessage\":\"失败\",\"retData\":null,\"timestamp\":0}",
+      "time" : {
+        "start" : 1642495773492,
+        "stop" : 1642495773495,
+        "duration" : 3
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert '2' == '1'\n  - 1\n  + 2\n",
+      "statusTrace" : "  File \"F:\\MyProject\\PythonProject\\Work\\xfs\\商品中心\\ProductCenterAutoTestFrame\\testFunctions\\test_basicQuery.py\", line 59, in test_query\n    assert res.json()['retStatus'] == '1'\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试接口集"
+  }, {
+    "name" : "feature",
+    "value" : "基础接口探活测试"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=2, reruns_delay=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testFunctions"
+  }, {
+    "name" : "suite",
+    "value" : "test_basicQuery"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBasicQuery"
+  }, {
+    "name" : "host",
+    "value" : "XTZJ-20211021CS"
+  }, {
+    "name" : "thread",
+    "value" : "6520-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testFunctions.test_basicQuery"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "fc7840de3a58f69d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '2' == '1'\n  - 1\n  + 2",
+      "time" : {
+        "start" : 1642495769346,
+        "stop" : 1642495770410,
+        "duration" : 1064
+      }
+    }, {
+      "uid" : "94871acc48d21770",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '2' == '1'\n  - 1\n  + 2",
+      "time" : {
+        "start" : 1642495766256,
+        "stop" : 1642495767338,
+        "duration" : 1082
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "flaky(reruns=2, reruns_delay=2)" ]
+  },
+  "source" : "e1d7c55de56dbc44.json",
+  "parameterValues" : [ ]
+}

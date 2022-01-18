@@ -1,0 +1,134 @@
+{
+  "uid" : "81f88ae375ecbd8c",
+  "name" : "品牌管理查询",
+  "fullName" : "testFunctions.test_basicQuery.TestBasicQuery#test_query",
+  "historyId" : "6056b812e0f1a7f3dfe413749c5847d2",
+  "time" : {
+    "start" : 1642495714642,
+    "stop" : 1642495715857,
+    "duration" : 1215
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址:http://product.pre.xinfangsheng.com/sysback/productbrand/productbrand/baseQueryList\n",
+      "time" : {
+        "start" : 1642495715653,
+        "stop" : 1642495715653,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求参数:data:{\"nowPage\": 1, \"pageShow\": 10, \"searchParam\": \"[{\\\"name\\\":\\\"brandName\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"brandState\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"brandName_q\\\",\\\"value\\\":\\\"Like\\\"},{\\\"name\\\":\\\"brandState_q\\\",\\\"value\\\":\\\"Like\\\"}]\"}\nparam:{'menuId': '206', 'buttonId': '2'}\n",
+      "time" : {
+        "start" : 1642495715653,
+        "stop" : 1642495715653,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头:{'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json;charset=UTF-8', 'cookie': 'uc_token=e957c609b1554018ae97fe1dc86e9cf1'}\n",
+      "time" : {
+        "start" : 1642495715653,
+        "stop" : 1642495715768,
+        "duration" : 115
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "返回参数:{\"retStatus\":\"1\",\"retMessage\":\"\",\"retData\":{\"pageShow\":10,\"nowPage\":1,\"totalNum\":4967,\"totalPage\":497,\"results\":[{\"uuid\":\"2100006583\",\"oper\":\"6674\",\"opeTime\":\"2022-01-18 10:05:06\",\"delFlag\":1,\"createOper\":\"13641\",\"createOpeTime\":\"2021-11-18 15:46:48\",\"version\":23,\"operationNumber\":null,\"orgId\":\"1002N11000000000UX5S\",\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"brandState\":\"1\",\"brandEnName\":\"GBBZ\",\"brandName\":\"丐帮帮主\",\"imageKey1\":\"\",\"imageKey2\":\"\",\"insideLevel\":\"1\",\"outsideLevel\":\"1\",\"parentUuid\":\"\",\"auditState\":\"2\",\"note\":\"\",\"factoryBrandEnName\":\"GBBZ\",\"factoryBrandName\":\"丐帮帮主\",\"factoryLogo\":\"\",\"factoryInfluenceMore\":\"2\",\"series\":null,\"chooseOrNo\":\"0\",\"canUpdate\":\"2\",\"parentName\":null},{\"uuid\":\"2100006594\",\"oper\":\"6535\",\"opeTime\":\"2021-12-29 09:53:57\",\"delFlag\":1,\"createOper\":\"6535\",\"createOpeTime\":\"2021-12-29 09:53:57\",\"version\":0,\"operationNumber\":null,\"orgId\":\"1002N1100000000126VI\",\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"brandState\":\"1\",\"brandEnName\":\"GREE\",\"brandName\":\"格历\",\"imageKey1\":\"\",\"imageKey2\":\"\",\"insideLevel\":\"1\",\"outsideLevel\":\"1\",\"parentUuid\":\"88\",\"auditState\":\"2\",\"note\":\"\",\"factoryBrandEnName\":null,\"factoryBrandName\":null,\"factoryLogo\":\"\",\"factoryInfluenceMore\":\"2\",\"series\":null,\"chooseOrNo\":\"0\",\"canUpdate\":\"2\",\"parentName\":null},{\"uuid\":\"44\",\"oper\":\"6674\",\"opeTime\":\"2021-12-20 08:58:55\",\"delFlag\":1,\"createOper\":\"-1\",\"createOpeTime\":\"2021-10-27 11:05:05\",\"version\":1,\"operationNumber\":null,\"orgId\":\"\",\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"brandState\":\"2\",\"brandEnName\":null,\"brandName\":\"建支\",\"imageKey1\":\"\",\"imageKey2\":\"/product/brandlogo/21616465959823..jpg\",\"insideLevel\":\"1\",\"outsideLevel\":\"1\",\"parentUuid\":\"\",\"auditState\":\"2\",\"note\":\"北京建支铸造集团有限公司始建于1982年，生产各品种规格建支牌管件，已有30多年的生产历史。年产球墨铸铁沟槽式管接件、可锻铸铁螺纹管件、可锻铸铁衬塑管件、各种线路金具和机械配件8万多吨。产品销往国内30多个省市自治区，并远销东南亚、欧洲、非洲、南美、大洋洲等40多个国家和地区。综合实力国内同行业排名第二。建支重质量守信誉。从2002年起就郑重向市场承诺，“退回一个建支牌废品管件奖励用户200元。”市场退废率始终保持在40万分之一以下。2011年起，退回一个建支牌灰件奖励1618元。确保力学性能合格率100%无退货。建支多次获得省部级科技进步奖，先后获得了20多项专利。建支通过了ISO9001认证。科学的管理体系，一流的生产检测设备，精湛的工艺技术确保了产品质量。2008年先后通过美国“UL”认证，欧盟“CE认证”，巴西“ABNT”认证、土耳其“TSE”认证。\",\"factoryBrandEnName\":null,\"factoryBrandName\":null,\"factoryLogo\":null,\"factoryInfluenceMore\":\"2\",\"series\":null,\"chooseOrNo\":\"0\",\"canUpdate\":\"2\",\"parentName\":null},{\"uuid\":\"2100006589\",\"oper\":\"6674\",\"opeTime\":\"2021-12-14 09:38:01\",\"delFlag\":1,\"createOper\":\"6674\",\"createOpeTime\":\"2021-12-14 09:38:01\",\"version\":0,\"operationNumber\":null,\"orgId\":\"1002N11000000000HS44\",\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"brandState\":\"1\",\"brandEnName\":\"Banana\",\"brandName\":\"Banana\",\"imageKey1\":\"/2021-12-14/FILE7a62fa5e1a464409ab69f86e7caa0834.png\",\"imageKey2\":\"/2021-12-14/FILEde2f2686d9214aafa922281c947275ad.png\",\"insideLevel\":\"2\",\"outsideLevel\":\"3\",\"parentUuid\":\"\",\"auditState\":\"2\",\"note\":\"香蕉不愤怒！\",\"factoryBrandEnName\":\"Banana\",\"factoryBrandName\":\"香蕉\",\"factoryLogo\":\"/2021-12-14/FILE3c5ceb72f6744cd688cc55ce50e3eeae.png\",\"factoryInfluenceMore\":\"2\",\"series\":null,\"chooseOrNo\":\"0\",\"canUpdate\":\"2\",\"parentName\":null},{\"uuid\":\"2100006588\",\"oper\":\"6674\",\"opeTime\":\"2021-12-14 09:18:22\",\"delFlag\":1,\"createOper\":\"6674\",\"createOpeTime\":\"2021-12-14 09:18:22\",\"version\":0,\"operationNumber\":null,\"orgId\":\"1002N11000000000HS44\",\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"brandState\":\"1\",\"brandEnName\":\"orange\",\"brandName\":\"orange\",\"imageKey1\":\"/2021-12-14/FILE8021b6e0e59b4034a95cb8bedc1303eb.png\",\"imageKey2\":\"/2021-12-14/FILE77bbebde596b4bb3859adf5a6ea2d051.png\",\"insideLevel\":\"2\",\"outsideLevel\":\"2\",\"parentUuid\":\"\",\"auditState\":\"2\",\"note\":\"就是橙子~\",\"factoryBrandEnName\":\"orange\",\"factoryBrandName\":\"橙子\",\"factoryLogo\":\"/2021-12-14/FILE64a3d63e2be84b848d9afd6621de84fc.png\",\"factoryInfluenceMore\":\"2\",\"series\":null,\"chooseOrNo\":\"0\",\"canUpdate\":\"2\",\"parentName\":null},{\"uuid\":\"2100006585\",\"oper\":\"17687\",\"opeTime\":\"2021-11-19 14:28:47\",\"delFlag\":1,\"createOper\":\"17687\",\"createOpeTime\":\"2021-11-19 14:28:47\",\"version\":0,\"operationNumber\":null,\"orgId\":\"1002N11000000000LBDQ\",\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"brandState\":\"1\",\"brandEnName\":\"\",\"brandName\":\"华清\",\"imageKey1\":\"\",\"imageKey2\":\"\",\"insideLevel\":\"\",\"outsideLevel\":\"\",\"parentUuid\":\"\",\"auditState\":\"2\",\"note\":\"\",\"factoryBrandEnName\":null,\"factoryBrandName\":null,\"factoryLogo\":\"\",\"factoryInfluenceMore\":\"2\",\"series\":null,\"chooseOrNo\":\"0\",\"canUpdate\":\"2\",\"parentName\":null},{\"uuid\":\"2100006586\",\"oper\":\"8976\",\"opeTime\":\"2021-11-19 14:28:41\",\"delFlag\":1,\"createOper\":\"8976\",\"createOpeTime\":\"2021-11-19 14:28:41\",\"version\":0,\"operationNumber\":null,\"orgId\":\"1002N11000000000LBDQ\",\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"brandState\":\"1\",\"brandEnName\":\"\",\"brandName\":\"呢国\",\"imageKey1\":\"\",\"imageKey2\":\"\",\"insideLevel\":\"\",\"outsideLevel\":\"\",\"parentUuid\":\"\",\"auditState\":\"2\",\"note\":\"\",\"factoryBrandEnName\":null,\"factoryBrandName\":null,\"factoryLogo\":\"\",\"factoryInfluenceMore\":\"2\",\"series\":null,\"chooseOrNo\":\"0\",\"canUpdate\":\"2\",\"parentName\":null},{\"uuid\":\"2100006576\",\"oper\":\"18931\",\"opeTime\":\"2021-11-18 15:46:55\",\"delFlag\":1,\"createOper\":\"18931\",\"createOpeTime\":\"2021-11-18 15:46:55\",\"version\":0,\"operationNumber\":null,\"orgId\":\"1002N11000000000UX5S\",\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"brandState\":\"1\",\"brandEnName\":\"NMR\",\"brandName\":\"南慕容\",\"imageKey1\":\"\",\"imageKey2\":\"\",\"insideLevel\":\"5\",\"outsideLevel\":\"5\",\"parentUuid\":\"\",\"auditState\":\"2\",\"note\":\"小型品牌\",\"factoryBrandEnName\":\"nmr\",\"factoryBrandName\":\"nmr\",\"factoryLogo\":\"\",\"factoryInfluenceMore\":\"2\",\"series\":null,\"chooseOrNo\":\"0\",\"canUpdate\":\"2\",\"parentName\":null},{\"uuid\":\"2100006500\",\"oper\":\"18711\",\"opeTime\":\"2021-11-17 16:10:13\",\"delFlag\":1,\"createOper\":\"18711\",\"createOpeTime\":\"2021-11-17 16:10:13\",\"version\":0,\"operationNumber\":null,\"orgId\":\"1002N11000000000LBDF\",\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"brandState\":\"1\",\"brandEnName\":\"aoligei\",\"brandName\":\"奥利给\",\"imageKey1\":\"\",\"imageKey2\":\"\",\"insideLevel\":\"3\",\"outsideLevel\":\"3\",\"parentUuid\":\"\",\"auditState\":\"2\",\"note\":\"\",\"factoryBrandEnName\":null,\"factoryBrandName\":null,\"factoryLogo\":\"\",\"factoryInfluenceMore\":\"2\",\"series\":null,\"chooseOrNo\":\"0\",\"canUpdate\":\"1\",\"parentName\":null},{\"uuid\":\"2100006579\",\"oper\":\"13641\",\"opeTime\":\"2021-11-17 16:09:08\",\"delFlag\":1,\"createOper\":\"13641\",\"createOpeTime\":\"2021-11-17 16:09:08\",\"version\":0,\"operationNumber\":null,\"orgId\":\"1002N11000000000UX5S\",\"sortName\":\"opeTime\",\"sortType\":\"desc\",\"menuId\":null,\"buttonId\":null,\"loginUserId\":null,\"hrDepartmentNumber\":null,\"hrAreaId\":null,\"areaNo\":null,\"mapCondition\":{},\"brandState\":\"1\",\"brandEnName\":\"BBQ\",\"brandName\":\"芭比Q\",\"imageKey1\":\"\",\"imageKey2\":\"\",\"insideLevel\":\"1\",\"outsideLevel\":\"1\",\"parentUuid\":\"\",\"auditState\":\"2\",\"note\":\"\",\"factoryBrandEnName\":\"BBQ\",\"factoryBrandName\":\"芭比Q\",\"factoryLogo\":\"\",\"factoryInfluenceMore\":\"2\",\"series\":null,\"chooseOrNo\":\"0\",\"canUpdate\":\"1\",\"parentName\":null}],\"fromNum\":0},\"timestamp\":0}",
+      "time" : {
+        "start" : 1642495715804,
+        "stop" : 1642495715857,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试接口集"
+  }, {
+    "name" : "feature",
+    "value" : "基础接口探活测试"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=2, reruns_delay=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testFunctions"
+  }, {
+    "name" : "suite",
+    "value" : "test_basicQuery"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBasicQuery"
+  }, {
+    "name" : "host",
+    "value" : "XTZJ-20211021CS"
+  }, {
+    "name" : "thread",
+    "value" : "6520-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testFunctions.test_basicQuery"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=2, reruns_delay=2)" ]
+  },
+  "source" : "81f88ae375ecbd8c.json",
+  "parameterValues" : [ ]
+}

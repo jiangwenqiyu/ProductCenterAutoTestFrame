@@ -1,0 +1,451 @@
+[ {
+  "uid" : "bac5e3252dbb4266",
+  "name" : "属性模板管理提交",
+  "time" : {
+    "start" : 1642495754769,
+    "stop" : 1642495755973,
+    "duration" : 1204
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "81050378a2d3054e",
+  "name" : "品类提交",
+  "time" : {
+    "start" : 1642495702162,
+    "stop" : 1642495703260,
+    "duration" : 1098
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "15a4b540655bb083",
+  "name" : "属性模板管理编辑",
+  "time" : {
+    "start" : 1642495753556,
+    "stop" : 1642495754764,
+    "duration" : 1208
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5c5a5996bd246e37",
+  "name" : "品类审核通过",
+  "time" : {
+    "start" : 1642495713036,
+    "stop" : 1642495714639,
+    "duration" : 1603
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd104412c27fcb47",
+  "name" : "归类管理查询页面",
+  "time" : {
+    "start" : 1642495737416,
+    "stop" : 1642495738557,
+    "duration" : 1141
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eaf51745f0645b03",
+  "name" : "属性分类管理编辑",
+  "time" : {
+    "start" : 1642495757056,
+    "stop" : 1642495758109,
+    "duration" : 1053
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "909b94d107d21a72",
+  "name" : "修改品类关联归类查询",
+  "time" : {
+    "start" : 1642495694741,
+    "stop" : 1642495695831,
+    "duration" : 1090
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4e55b08e1c06a2ec",
+  "name" : "属性模板编辑",
+  "time" : {
+    "start" : 1642495750164,
+    "stop" : 1642495751223,
+    "duration" : 1059
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df2ed740f9683d51",
+  "name" : "属性值分类管理查看",
+  "time" : {
+    "start" : 1642495764066,
+    "stop" : 1642495765188,
+    "duration" : 1122
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6e414080dad1fbd2",
+  "name" : "新增品类弹出页面",
+  "time" : {
+    "start" : 1642495689515,
+    "stop" : 1642495691244,
+    "duration" : 1729
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a7fadab6ee04f493",
+  "name" : "属性值分类管理编辑",
+  "time" : {
+    "start" : 1642495765191,
+    "stop" : 1642495766251,
+    "duration" : 1060
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9a51a12a756b4d3",
+  "name" : "品牌提交",
+  "time" : {
+    "start" : 1642495735066,
+    "stop" : 1642495736168,
+    "duration" : 1102
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1e8300350b6d93",
+  "name" : "属性管理提交",
+  "time" : {
+    "start" : 1642495762904,
+    "stop" : 1642495764062,
+    "duration" : 1158
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "91356cde7e21e9ed",
+  "name" : "品类审核未通过",
+  "time" : {
+    "start" : 1642495703267,
+    "stop" : 1642495704464,
+    "duration" : 1197
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "93cb88b3ab397a1a",
+  "name" : "品类待审核查询",
+  "time" : {
+    "start" : 1642495687017,
+    "stop" : 1642495688314,
+    "duration" : 1297
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40e3154d2b6bb6eb",
+  "name" : "品类提交",
+  "time" : {
+    "start" : 1642495711920,
+    "stop" : 1642495713029,
+    "duration" : 1109
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "745b011ac5d9ecf7",
+  "name" : "品牌审核未通过查询",
+  "time" : {
+    "start" : 1642495717089,
+    "stop" : 1642495718177,
+    "duration" : 1088
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8145cc948b989000",
+  "name" : "属性分类管理提交",
+  "time" : {
+    "start" : 1642495758111,
+    "stop" : 1642495760694,
+    "duration" : 2583
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4278eee41f1f194f",
+  "name" : "修改品类关联验收事项查询",
+  "time" : {
+    "start" : 1642495693652,
+    "stop" : 1642495694738,
+    "duration" : 1086
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6939480b5a8423a",
+  "name" : "属性值管理查看",
+  "time" : {
+    "start" : 1642495773508,
+    "stop" : 1642495774651,
+    "duration" : 1143
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6321c4db504d80e2",
+  "name" : "品牌审核通过",
+  "time" : {
+    "start" : 1642495736174,
+    "stop" : 1642495737413,
+    "duration" : 1239
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f1d32d6b9be7975",
+  "name" : "品牌编辑页面",
+  "time" : {
+    "start" : 1642495718180,
+    "stop" : 1642495719263,
+    "duration" : 1083
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "81f88ae375ecbd8c",
+  "name" : "品牌管理查询",
+  "time" : {
+    "start" : 1642495714642,
+    "stop" : 1642495715857,
+    "duration" : 1215
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f1b8d4d55632a702",
+  "name" : "属性值管理编辑",
+  "time" : {
+    "start" : 1642495774654,
+    "stop" : 1642495775723,
+    "duration" : 1069
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40a3b903c9867aa2",
+  "name" : "属性管理查看",
+  "time" : {
+    "start" : 1642495760696,
+    "stop" : 1642495761837,
+    "duration" : 1141
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44fb5452257bfa90",
+  "name" : "归类待审核页面查询",
+  "time" : {
+    "start" : 1642495738561,
+    "stop" : 1642495739642,
+    "duration" : 1081
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b282211197d41643",
+  "name" : "品牌审核未通过",
+  "time" : {
+    "start" : 1642495727659,
+    "stop" : 1642495728854,
+    "duration" : 1195
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5804b9830c756b4f",
+  "name" : "属性管理编辑",
+  "time" : {
+    "start" : 1642495761841,
+    "stop" : 1642495762901,
+    "duration" : 1060
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a77b7d02659413dd",
+  "name" : "属性模板管理查看",
+  "time" : {
+    "start" : 1642495752422,
+    "stop" : 1642495753553,
+    "duration" : 1131
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45f2385e45fcfc38",
+  "name" : "品类审核未通过查询",
+  "time" : {
+    "start" : 1642495688318,
+    "stop" : 1642495689512,
+    "duration" : 1194
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e3d54ee5e0228e7",
+  "name" : "品类查看历史",
+  "time" : {
+    "start" : 1642495691247,
+    "stop" : 1642495692410,
+    "duration" : 1163
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a811ac2b04a2d90",
+  "name" : "属性分类管理查看",
+  "time" : {
+    "start" : 1642495755976,
+    "stop" : 1642495757053,
+    "duration" : 1077
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "31a1dfa40b355d03",
+  "name" : "属性值管理提交",
+  "time" : {
+    "start" : 1642495775727,
+    "stop" : 1642495776904,
+    "duration" : 1177
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e98090b1feec851",
+  "name" : "test_cate_wait_check",
+  "time" : {
+    "start" : 1642495685688,
+    "stop" : 1642495685688,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe828fa753076d2d",
+  "name" : "归类审核未通过页面查询",
+  "time" : {
+    "start" : 1642495739645,
+    "stop" : 1642495740701,
+    "duration" : 1056
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e1d7c55de56dbc44",
+  "name" : "属性值分类管理提交",
+  "time" : {
+    "start" : 1642495772424,
+    "stop" : 1642495773495,
+    "duration" : 1071
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "85ad1bc86c087b6d",
+  "name" : "品类管理查询",
+  "time" : {
+    "start" : 1642495685690,
+    "stop" : 1642495687014,
+    "duration" : 1324
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6935fc69836ecebb",
+  "name" : "归类提交修改",
+  "time" : {
+    "start" : 1642495747952,
+    "stop" : 1642495749050,
+    "duration" : 1098
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "360fe85f855da88e",
+  "name" : "属性模板提交",
+  "time" : {
+    "start" : 1642495751226,
+    "stop" : 1642495752419,
+    "duration" : 1193
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f612c275a4fb7b01",
+  "name" : "归类编辑页面",
+  "time" : {
+    "start" : 1642495740704,
+    "stop" : 1642495741770,
+    "duration" : 1066
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc5313ec8577b9dd",
+  "name" : "属性模板查看",
+  "time" : {
+    "start" : 1642495749077,
+    "stop" : 1642495750161,
+    "duration" : 1084
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "484d4677b2ac89b3",
+  "name" : "品牌管理待审核查询",
+  "time" : {
+    "start" : 1642495715861,
+    "stop" : 1642495717086,
+    "duration" : 1225
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f19ce2228cfce8fd",
+  "name" : "品类编辑",
+  "time" : {
+    "start" : 1642495692415,
+    "stop" : 1642495693649,
+    "duration" : 1234
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "41bfb4c0a05ecd15",
+  "name" : "品类编辑",
+  "time" : {
+    "start" : 1642495704468,
+    "stop" : 1642495705691,
+    "duration" : 1223
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7f39290dae28b60d",
+  "name" : "品牌提交",
+  "time" : {
+    "start" : 1642495725528,
+    "stop" : 1642495727653,
+    "duration" : 2125
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

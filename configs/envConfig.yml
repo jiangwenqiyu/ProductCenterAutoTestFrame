@@ -3,8 +3,9 @@ t4:
 
 fangzhen:
   host: http://product.pre.xinfangsheng.com
-  token: 479fff228f5d4b0c886e8fe4bd900833
-  db_link: 127.0.0.1
+  token: e957c609b1554018ae97fe1dc86e9cf1
+  db_link: 192.168.0.129
   db_user: root
-  db_pass: qwe123123
+  db_pass: xfs123456
   db_database: productTestFrame
+  a: 1

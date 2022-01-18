@@ -1,0 +1,134 @@
+{
+  "uid" : "8145cc948b989000",
+  "name" : "属性分类管理提交",
+  "fullName" : "testFunctions.test_basicQuery.TestBasicQuery#test_query",
+  "historyId" : "121fc697c0239d5ed57e6954d1e70536",
+  "time" : {
+    "start" : 1642495758111,
+    "stop" : 1642495760694,
+    "duration" : 2583
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址:http://product.pre.xinfangsheng.com/sysback/template/producttemplateattrcategory/baseUpdate\n",
+      "time" : {
+        "start" : 1642495759115,
+        "stop" : 1642495759115,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求参数:data:{\"note\": \"\\u5c5e\\u6027\\u5206\\u7c7b\\u6d4b\\u8bd51\", \"oper\": \"6535\", \"uuid\": \"2100000003\", \"orgId\": \"1002N1100000000126VI\", \"state\": \"1\", \"areaNo\": null, \"menuId\": null, \"delFlag\": 1, \"opeTime\": \"2021-12-29 10:04:44\", \"version\": 0, \"buttonId\": null, \"hrAreaId\": null, \"sortName\": \"opeTime\", \"sortType\": \"desc\", \"createOper\": \"6535\", \"loginUserId\": null, \"categoryName\": \"\\u5c5e\\u6027\\u5206\\u7c7b\\u6d4b\\u8bd51\", \"mapCondition\": {}, \"createOpeTime\": \"2021-12-29 10:04:44\", \"operationNumber\": null, \"hrDepartmentNumber\": null}\nparam:{'menuId': '216', 'buttonId': '3'}\n",
+      "time" : {
+        "start" : 1642495759115,
+        "stop" : 1642495759115,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头:{'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json;charset=UTF-8', 'cookie': 'uc_token=e957c609b1554018ae97fe1dc86e9cf1'}\n",
+      "time" : {
+        "start" : 1642495759115,
+        "stop" : 1642495760693,
+        "duration" : 1578
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "返回参数:{\"retStatus\":\"1\",\"retMessage\":\"\",\"retData\":null,\"timestamp\":0}",
+      "time" : {
+        "start" : 1642495760693,
+        "stop" : 1642495760694,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试接口集"
+  }, {
+    "name" : "feature",
+    "value" : "基础接口探活测试"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=2, reruns_delay=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testFunctions"
+  }, {
+    "name" : "suite",
+    "value" : "test_basicQuery"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBasicQuery"
+  }, {
+    "name" : "host",
+    "value" : "XTZJ-20211021CS"
+  }, {
+    "name" : "thread",
+    "value" : "6520-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testFunctions.test_basicQuery"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=2, reruns_delay=2)" ]
+  },
+  "source" : "8145cc948b989000.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,138 @@
+{
+  "uid" : "176c848e3b144fbd",
+  "name" : "品类提交",
+  "fullName" : "testFunctions.test_basicQuery.TestBasicQuery#test_query",
+  "historyId" : "7c5bd82ae6ee5e07d96a5870e0a95662",
+  "time" : {
+    "start" : 1642495695834,
+    "stop" : 1642495696961,
+    "duration" : 1127
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '2' == '1'\n  - 1\n  + 2",
+  "statusTrace" : "self = <testFunctions.test_basicQuery.TestBasicQuery object at 0x0000025E2724FEB8>\ninfo = {'data': {'acceptItemNames': '网扣;次长边（CM）;颜色', 'acceptItemUuids': ['3', '21', '30'], 'batchOrderPrice': 5000, 'brandNam...ion/json;charset=UTF-8', 'cookie': 'uc_token=e957c609b1554018ae97fe1dc86e9cf1'}, 'method': 'POST', 'name': '品类提交', ...}\n\n    @allure.story('测试接口集')\n    @pytest.mark.parametrize('info', DealTest().getCases(**getDbInfo()))\n    @pytest.mark.flaky(reruns=2, reruns_delay=2)\n    def test_query(self, info):\n        time.sleep(1)\n        Dynamic.title(info['name'])\n    \n        method = info['method'].lower()\n        url = productEnvConfig.host + info['path']\n        header = info['header']\n        header['cookie'] = f'uc_token={productEnvConfig.token}'\n        reqType = info['reqType']\n        if reqType == 'json':\n            data = json.dumps(info['data'])\n        else:\n            data = info['data']\n        param = info['param']\n    \n    \n        with allure.step('请求地址:{}\\n'.format(url)):\n            pass\n        with allure.step('请求参数:data:{}\\nparam:{}\\n'.format(data, param)):\n            pass\n        with allure.step('请求头:{}\\n'.format(header)):\n            res = self.requests.request(method, url, header, data = data, params = param)\n    \n        with allure.step('返回参数:{}'.format(res.text)):\n            self.requests.myLog.debug('返回值: {}'.format(res.text))\n            assert res.status_code == 200\n>           assert res.json()['retStatus'] == '1'\nE           AssertionError: assert '2' == '1'\nE             - 1\nE             + 2\n\ntestFunctions\\test_basicQuery.py:59: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '2' == '1'\n  - 1\n  + 2",
+    "statusTrace" : "self = <testFunctions.test_basicQuery.TestBasicQuery object at 0x0000025E2724FEB8>\ninfo = {'data': {'acceptItemNames': '网扣;次长边（CM）;颜色', 'acceptItemUuids': ['3', '21', '30'], 'batchOrderPrice': 5000, 'brandNam...ion/json;charset=UTF-8', 'cookie': 'uc_token=e957c609b1554018ae97fe1dc86e9cf1'}, 'method': 'POST', 'name': '品类提交', ...}\n\n    @allure.story('测试接口集')\n    @pytest.mark.parametrize('info', DealTest().getCases(**getDbInfo()))\n    @pytest.mark.flaky(reruns=2, reruns_delay=2)\n    def test_query(self, info):\n        time.sleep(1)\n        Dynamic.title(info['name'])\n    \n        method = info['method'].lower()\n        url = productEnvConfig.host + info['path']\n        header = info['header']\n        header['cookie'] = f'uc_token={productEnvConfig.token}'\n        reqType = info['reqType']\n        if reqType == 'json':\n            data = json.dumps(info['data'])\n        else:\n            data = info['data']\n        param = info['param']\n    \n    \n        with allure.step('请求地址:{}\\n'.format(url)):\n            pass\n        with allure.step('请求参数:data:{}\\nparam:{}\\n'.format(data, param)):\n            pass\n        with allure.step('请求头:{}\\n'.format(header)):\n            res = self.requests.request(method, url, header, data = data, params = param)\n    \n        with allure.step('返回参数:{}'.format(res.text)):\n            self.requests.myLog.debug('返回值: {}'.format(res.text))\n            assert res.status_code == 200\n>           assert res.json()['retStatus'] == '1'\nE           AssertionError: assert '2' == '1'\nE             - 1\nE             + 2\n\ntestFunctions\\test_basicQuery.py:59: AssertionError",
+    "steps" : [ {
+      "name" : "请求地址:http://product.pre.xinfangsheng.com/sysback/category/productplatformcategoryaudit/updatePlatCategory\n",
+      "time" : {
+        "start" : 1642495696841,
+        "stop" : 1642495696841,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求参数:data:{\"uuid\": \"2100000034\", \"isKey\": \"2\", \"state\": \"1\", \"isMetal\": \"2\", \"levelNum\": \"4\", \"position\": 1, \"brandNames\": \"\", \"brandUuids\": [], \"categoryNo\": \"99999\", \"parentUuid\": \"21037\", \"categoryName\": \"\\u5438\\u6c34\\u888b\", \"categoryNote\": \"\\u9632\\u6d2a\\u7528\\u54c1\", \"categoryType\": \"3\", \"dangerousOrder\": \"\", \"acceptItemNames\": \"\\u7f51\\u6263;\\u6b21\\u957f\\u8fb9\\uff08CM\\uff09;\\u989c\\u8272\", \"acceptItemUuids\": [\"3\", \"21\", \"30\"], \"batchOrderPrice\": 5000, \"listAcceptItems\": [{\"uuid\": \"3\", \"isNeed\": \"2\", \"itemName\": \"\\u6b21\\u957f\\u8fb9\\uff08CM\\uff09\", \"categoryUuid\": \"2100000034\", \"isNeedForPurchase\": \"2\"}, {\"uuid\": \"21\", \"isNeed\": \"2\", \"itemName\": \"\\u7f51\\u6263\", \"categoryUuid\": \"2100000034\", \"isNeedForPurchase\": \"2\"}, {\"uuid\": \"30\", \"isNeed\": \"2\", \"itemName\": \"\\u989c\\u8272\", \"categoryUuid\": \"2100000034\", \"isNeedForPurchase\": \"2\"}], \"isPriceSensitive\": \"2\", \"categoryProductType\": \"3\", \"classificationNames\": \"\\u9632\\u6c5b\\u6c99\\u888b\", \"classificationUuids\": [\"19647\"], \"productTemplateNames\": \"\\u9632\\u6c5b\\u6c99\\u888b\", \"productTemplateUuids\": [\"10123\"], \"listQualificationTypes\": [{\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"5\", \"qualificationTypeName\": \"\\u8425\\u4e1a\\u6267\\u7167\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"6\", \"qualificationTypeName\": \"\\u5382\\u5bb6\\u6388\\u6743\\u4e66\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"7\", \"qualificationTypeName\": \"\\u8d28\\u91cf\\u7ba1\\u7406\\u4f53\\u7cfb\\u8ba4\\u8bc1\\u8bc1\\u4e66\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"8\", \"qualificationTypeName\": \"\\u73af\\u5883\\u7ba1\\u7406\\u4f53\\u7cfb\\u8ba4\\u8bc1\\u8bc1\\u4e66\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"9\", \"qualificationTypeName\": \"\\u536b\\u751f\\u8bb8\\u53ef\\u8bc1\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"10\", \"qualificationTypeName\": \"\\u751f\\u4ea7\\u8bb8\\u53ef\\u8bc1\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"11\", \"qualificationTypeName\": \"\\u804c\\u4e1a\\u5065\\u5eb7\\u75be\\u75c5\\u9884\\u9632\\u8ba4\\u8bc1\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"12\", \"qualificationTypeName\": \"\\u5168\\u56fd\\u5de5\\u4e1a\\u4ea7\\u54c1\\u751f\\u4ea7\\u8bb8\\u53ef\\u8bc1\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"13\", \"qualificationTypeName\": \"\\u6d4b\\u91cf\\u7ba1\\u7406\\u4f53\\u7cfb\\u8ba4\\u8bc1\\u8bc1\\u4e66\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"14\", \"qualificationTypeName\": \"\\u5236\\u9020\\u8ba1\\u91cf\\u5668\\u5177\\u8bb8\\u53ef\\u8bc1\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"15\", \"qualificationTypeName\": \"\\u94f6\\u884c\\u5f00\\u6237\\u8bb8\\u53ef\\u8bc1\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"16\", \"qualificationTypeName\": \"\\u7279\\u79cd\\u8bbe\\u5907\\u5236\\u9020\\u8bb8\\u53ef\\u8bc1\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"17\", \"qualificationTypeName\": \"LA\\u7279\\u79cd\\u52b3\\u52a8\\u9632\\u62a4\\u7528\\u54c1\\u5b89\\u5168\\u6807\\u5fd7\\u8bc1\\u4e66\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"18\", \"qualificationTypeName\": \"MSDS\\u5316\\u5b66\\u54c1\\u5b89\\u5168\\u6280\\u672f\\u8bf4\\u660e\\u4e66\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"19\", \"qualificationTypeName\": \"\\u6392\\u653e\\u6c61\\u67d3\\u7269\\u8bb8\\u53ef\\u8bc1\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"20\", \"qualificationTypeName\": \"\\u5546\\u6807\\u6ce8\\u518c\\u8bc1\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"21\", \"qualificationTypeName\": \"IS9000\\u8ba4\\u8bc1\"}, {\"uuid\": null, \"relType\": \"2\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"22\", \"qualificationTypeName\": \"IS9002\\u8ba4\\u8bc1\"}, {\"uuid\": null, \"relType\": \"1\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"1\", \"qualificationTypeName\": \"\\u68c0\\u9a8c\\u62a5\\u544a\"}, {\"uuid\": null, \"relType\": \"1\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"2\", \"qualificationTypeName\": \"\\u6750\\u8d28\\u5355\"}, {\"uuid\": null, \"relType\": \"1\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"3\", \"qualificationTypeName\": \"\\u5408\\u683c\\u8bc1\"}, {\"uuid\": null, \"relType\": \"1\", \"_checked\": false, \"cateUuid\": null, \"mustHave\": \"2\", \"selected\": false, \"qualificationTypeNo\": \"4\", \"qualificationTypeName\": \"3C\\u8ba4\\u8bc1\"}], \"productSceneCategoryNames\": \"\\u6d88\\u9632\\u6a21\\u5757\", \"productSceneCategoryUuids\": [\"10012\"]}\nparam:{'menuId': '202', 'buttonId': '2'}\n",
+      "time" : {
+        "start" : 1642495696841,
+        "stop" : 1642495696841,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头:{'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json;charset=UTF-8', 'cookie': 'uc_token=e957c609b1554018ae97fe1dc86e9cf1'}\n",
+      "time" : {
+        "start" : 1642495696841,
+        "stop" : 1642495696958,
+        "duration" : 117
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "返回参数:{\"retStatus\":\"2\",\"retMessage\":\"存在正在修改的单据信息\",\"retData\":null,\"timestamp\":0}",
+      "time" : {
+        "start" : 1642495696959,
+        "stop" : 1642495696961,
+        "duration" : 2
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert '2' == '1'\n  - 1\n  + 2\n",
+      "statusTrace" : "  File \"F:\\MyProject\\PythonProject\\Work\\xfs\\商品中心\\ProductCenterAutoTestFrame\\testFunctions\\test_basicQuery.py\", line 59, in test_query\n    assert res.json()['retStatus'] == '1'\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试接口集"
+  }, {
+    "name" : "feature",
+    "value" : "基础接口探活测试"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=2, reruns_delay=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testFunctions"
+  }, {
+    "name" : "suite",
+    "value" : "test_basicQuery"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBasicQuery"
+  }, {
+    "name" : "host",
+    "value" : "XTZJ-20211021CS"
+  }, {
+    "name" : "thread",
+    "value" : "6520-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testFunctions.test_basicQuery"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=2, reruns_delay=2)" ]
+  },
+  "source" : "176c848e3b144fbd.json",
+  "parameterValues" : [ ]
+}
