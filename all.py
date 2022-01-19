@@ -7,7 +7,6 @@ from configs.EnvConfig import productEnv
 
 
 
-
 # 修改报告内容
 def alterRep():
     with open('./reports/widgets/summary.json', 'r') as f:
@@ -28,9 +27,8 @@ def alterRep():
 
 
 
-
 if __name__ == '__main__':
-    productEnv('fangzhen')
+    productEnv('t4')
     pytest.main()
     os.system('allure generate ./report_temp -o ./reports --clean')
     alterRep()

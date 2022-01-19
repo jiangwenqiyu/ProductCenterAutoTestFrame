@@ -2,13 +2,12 @@ import pytest
 import json
 import allure
 from allure_commons._allure import Dynamic
-
 from common.loadCasesFromDb import DealTest
 from common.requestPackage import RequestSend
 from common.yaml_util import YamlUtil
 import time
-
 from configs.EnvConfig import productEnv
+import jmespath
 
 
 def getDbInfo():
@@ -21,14 +20,14 @@ def getDbInfo():
     return temp
 
 
-@allure.feature('基础接口探活测试')
+@allure.feature('基础页面接口查询')
 class TestBasicQuery:
 
     requests = RequestSend()
 
 
     @allure.story('测试接口集')
-    @pytest.mark.parametrize('info', DealTest().getCases(**getDbInfo()))
+    @pytest.mark.parametrize('info', DealTest().getExcel())
     @pytest.mark.flaky(reruns=2, reruns_delay=2)
     def test_query(self, info):
         time.sleep(1)
@@ -38,7 +37,7 @@ class TestBasicQuery:
         url = productEnv.host + info['path']
         header = info['header']
         header['cookie'] = f'uc_token={productEnv.token}'
-        reqType = info['reqType']
+        reqType = info['dataType']
         if reqType == 'json':
             data = json.dumps(info['data'])
         else:
@@ -56,9 +55,17 @@ class TestBasicQuery:
         with allure.step('返回参数:{}'.format(res.text)):
             self.requests.myLog.debug('返回值: {}'.format(res.text))
             assert res.status_code == 200
-            assert res.json()['retStatus'] == '1'
+            for i in info['assert']:
+                assert jmespath.search(i['jmespath'], res.json()) == i['exp']
 
 
+@allure.feature('修改四级分类')
+class TestAlterCate:
+    requests = RequestSend()
+
+    @allure.title('初始化清空待审核单据')
+    def test_init(self):
+        pass
 
 
 

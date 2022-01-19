@@ -1,7 +1,7 @@
 #encoding=utf-8
 import json
 import requests
-# import jsonpath
+import xlsxwriter
 
 
 
@@ -9,90 +9,68 @@ class CaseUtil:
 
     def __init__(self):
         self.cases = list()
+        self.work = xlsxwriter.Workbook('提取har文件.xlsx')
+        self.sheet = self.work.add_worksheet('sheet1')
+        self.sheet.write(0,0,'路径')
+        self.sheet.write(0,1,'请求头')
+        self.sheet.write(0,2,'请求方法')
+        self.sheet.write(0,3,'入参')
+        self.sheet.write(0,4,'入参类型')
+        self.sheet.write(0,5,'param')
+        self.sheet.write(0,6,'断言')
+        self.sheet.write(0,7,'主方法id')
+        self.sheet.write(0,8,'描述')
+
+
 
 
     def harToJson(self, filename):
         with open(filename, 'r', encoding='utf-8-sig') as f:
             data = json.loads(f.read())
 
+        a = 1
         for obj in data['log']['entries']:
-            temp = dict()
+
+            path = ''
+            header = dict()
+            method = obj['request']['method']
+            req_data = obj['request']['postData'].get('text')
+            reqType = ''
+            param = dict()
+
 
 
             url = obj['request']['url']
-            path = ''
             for i in url.split('?')[0].split('/')[3:]:
                 path += '/' + i
 
-            method = obj['request']['method']
 
-            req_data = obj['request']['postData'].get('text')
             if req_data:
                 req_data = json.loads(req_data)
-                temp['reqType'] = 'json'
+                reqType = 'json'
             else:
                 req_data = dict()
-                temp['reqType'] = 'form'
+                reqType = 'form'
                 temp_data = obj['request']['postData'].get('params')
                 for i in temp_data:
                     req_data[i['name']] = i['value']
 
-
-            param = dict()
             for i in obj['request']['queryString']:
                 param[i['name']] = i['value']
 
-            header = dict()
             for i in obj['request']['headers']:
                 if i['name'] == 'Accept' or i['name'] == 'Content-Type':
                     header[i['name']] = i['value']
 
-            res = obj['response']['content']['text']
+            self.sheet.write(a,0,path)
+            self.sheet.write(a,1,json.dumps(header))
+            self.sheet.write(a,2,method)
+            self.sheet.write(a,3,json.dumps(req_data))
+            self.sheet.write(a,4,reqType)
+            self.sheet.write(a,5,json.dumps(param))
 
-            temp['name'] = ''
-            temp['path'] = path
-            temp['header'] = header
-            temp['data'] = req_data
-            temp['param'] = param
-            temp['method'] = method
-            temp['validate'] = json.loads(res)
+            a += 1
 
-            self.cases.append(temp)
-            # print(data)
+        self.work.close()
 
-
-    def addCase(self):
-        with open('新建文本文档.txt', 'r', encoding='utf-8') as f:
-            file = f.readlines()
-
-        for i in range(len(file)):
-            name = file[i].replace('\n', '')
-            self.cases[i]['name'] = name
-
-
-    def add_to_db(self):
-        import pymysql
-        import yaml
-        from pymysql.converters import escape_string
-
-        with open('../configs/envConfig.yml', 'r') as f:
-            file = yaml.load(f, Loader=yaml.FullLoader)
-        print(file['fangzhen']['db_link'], file['fangzhen']['db_user'], file['fangzhen']['db_pass'])
-        con = pymysql.connect(host=file['fangzhen']['db_link'], user=file['fangzhen']['db_user'], password=file['fangzhen']['db_pass'], database=file['fangzhen']['db_database'])
-        cur = con.cursor()
-
-        for i in self.cases:
-            set = escape_string(json.dumps(i))
-            sql = '''insert into product_test_functions_detail values(0,'{}','{}','{}',1,1,'')'''.format( i['name'], i['path'], set)
-            cur.execute(sql)
-        con.commit()
-        cur.close()
-        con.close()
-
-
-
-o = CaseUtil()
-o.harToJson('1.har')
-o.addCase()
-o.add_to_db()
-
+CaseUtil().harToJson('1.har')

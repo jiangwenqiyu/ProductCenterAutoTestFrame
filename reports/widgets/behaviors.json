@@ -1,19 +1,19 @@
 {
   "total" : 2,
   "items" : [ {
-    "uid" : "dedbf75e94209ea060f31ab167de2c25",
-    "name" : "基础接口探活测试",
+    "uid" : "a52474f7dc761a6ab8a2326eb43cbba8",
+    "name" : "数据初始化",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     }
   }, {
-    "uid" : "a52474f7dc761a6ab8a2326eb43cbba8",
-    "name" : "数据初始化",
+    "uid" : "5101515af0d1ecb3c758961a7917fec9",
+    "name" : "基础页面接口查询",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

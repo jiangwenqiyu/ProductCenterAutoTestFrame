@@ -1,5 +1,8 @@
 import os
 from string import Template
+
+import xlrd
+
 from common.yaml_util import YamlUtil
 import json
 import pymysql
@@ -20,6 +23,25 @@ class DealTest:
             t1.append(json.loads(i[0]))
 
         return t1
+
+
+    def getExcel(self):
+        allInfo = []
+        work = xlrd.open_workbook('./提取har文件.xlsx')
+        sheet = work.sheet_by_name('sheet1')
+        for i in range(1, sheet.nrows):
+            temp = dict()
+            temp['name'] = sheet.cell_value(i, 0)
+            temp['path'] = sheet.cell_value(i, 1)
+            temp['header'] = json.loads(sheet.cell_value(i, 2))
+            temp['method'] = sheet.cell_value(i, 3)
+            temp['data'] = json.loads(sheet.cell_value(i, 4))
+            temp['dataType'] = sheet.cell_value(i, 5)
+            temp['param'] = json.loads(sheet.cell_value(i, 6))
+            temp['assert'] = json.loads(sheet.cell_value(i, 7))
+            allInfo.append(temp)
+
+        return allInfo
 
 
 
