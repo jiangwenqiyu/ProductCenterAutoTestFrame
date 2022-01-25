@@ -1,0 +1,15 @@
+t4:
+  host: http://product.t4.xinfangsheng.com
+  token: e957c609b1554018ae97fe1dc86e9cf1
+  db_link: 192.168.0.129
+  db_user: root
+  db_pass: xfs123456
+  db_database: productTestFrame_t4
+
+fangzhen:
+  host: http://product.pre.xinfangsheng.com
+  token: e957c609b1554018ae97fe1dc86e9cf1
+  db_link: 192.168.0.129
+  db_user: root
+  db_pass: xfs123456
+  db_database: productTestFrame_fangzhen
