@@ -9,7 +9,7 @@ class CaseUtil:
 
     def __init__(self):
         self.cases = list()
-        self.work = xlsxwriter.Workbook('待完善测试用例1.xlsx')
+        self.work = xlsxwriter.Workbook('待完善测试用例.xlsx')
         self.sheet = self.work.add_worksheet('sheet1')
         self.sheet.write(0,0,'用例名称')
         self.sheet.write(0,1,'路径')
