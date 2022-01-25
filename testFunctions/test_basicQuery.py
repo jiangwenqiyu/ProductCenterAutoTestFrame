@@ -4,8 +4,6 @@ import allure
 from allure_commons._allure import Dynamic
 from common.loadCasesFromDb import DealTest
 from common.requestPackage import RequestSend
-from common.yaml_util import YamlUtil
-import time
 from configs.EnvConfig import productEnv
 import jmespath
 import re
@@ -16,7 +14,7 @@ from common import common_functions
 
 @allure.feature('基础页面接口查询')
 @pytest.mark.run(order = 1)
-# @pytest.mark.skip
+@pytest.mark.skip
 class TestBasicQuery:
 
     # @allure.story('测试接口集')

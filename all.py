@@ -31,8 +31,8 @@ if __name__ == '__main__':
     pytest.main()
     os.system('allure generate ./report_temp -o ./reports --clean')
     alterRep()
-    # shutil.rmtree('./report_temp')
-    # os.mkdir('./report_temp')
+    shutil.rmtree('./report_temp')
+    os.mkdir('./report_temp')
 
 
 

@@ -67,7 +67,7 @@ class CaseUtil:
             self.sheet.write(a,1,path)
             self.sheet.write(a,2,json.dumps(header))
             self.sheet.write(a,3,method)
-            self.sheet.write(a,4,json.dumps(req_data))
+            self.sheet.write(a,4,json.dumps(req_data, ensure_ascii=False))
             self.sheet.write(a,5,reqType)
             self.sheet.write(a,6,json.dumps(param))
 

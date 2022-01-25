@@ -1,3 +1,5 @@
+import json
+
 import requests
 import allure
 from common.logPackage import MyLog
@@ -9,7 +11,7 @@ class RequestSend:
 
 
 
-    def request(self, method, url, **kwargs):
+    def request(self, dataType, method, url, **kwargs):
         log = list()
         log.append(method)
         log.append(url)
@@ -20,7 +22,11 @@ class RequestSend:
             with allure.step('请求地址:{}\n'.format(url)):
                 pass
 
-            with allure.step('请求参数:data:{}\nparam:{}\n'.format(kwargs.get('data'), kwargs.get('params'))):
+            data = kwargs.get('data')
+            if dataType == 'json':
+                data = json.loads(data)
+
+            with allure.step('请求参数:data:{}\nparam:{}\n'.format(data, kwargs.get('params'))):
                 res = requests.request(method, url, **kwargs)
                 assert res.status_code == 200, '状态码错误'
 

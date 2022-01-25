@@ -36,20 +36,21 @@ def parseData(data, dataType, saveValue):
 
 
 def excuteCases(info):
-    Dynamic.title(info['name'])
+    ''' 发送请求 '''
 
-    url = productEnv.host + info['path']
-    method = info['method'].lower()
-    header = info['header']
-    header['cookie'] = f'uc_token={productEnv.token}'
-    data = parseData(info['data'], info['dataType'], productEnv.saveValue)
+    Dynamic.title(info['name'])   # 设置报告标题
+    url = productEnv.host + info['path']  # 用例路径
+    method = info['method'].lower()  # 用例方法
+    header = info['header']  # 用例请求头
+    header['cookie'] = f'uc_token={productEnv.token}'  # 添加token
+    data = parseData(info['data'], info['dataType'], productEnv.saveValue)     # 解析用例入参
     param = info['param']
 
-    res = requests.request(method, url, headers = header, data = data, params = param)
+    res = requests.request(info['dataType'], method, url, headers = header, data = data, params = param)     # 使用封装的方法，执行请求
 
-    for i in info['assert']:
+    for i in info['assert']:           # 遍历所有断言
         assert jmespath.search(i['jmespath'], res.json()) == i['exp']
 
-    if info['save']:
+    if info['save']:                 # 判断是否有需要保存的数据
         productEnv.saveValue[info['name']] = jmespath.search(info['save']['jmespath'], res.json())
 
