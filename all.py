@@ -1,7 +1,6 @@
 import pytest
 import os
 import json
-import re
 import shutil
 from configs.EnvConfig import productEnv
 
@@ -28,12 +27,12 @@ def alterRep():
 
 
 if __name__ == '__main__':
-    productEnv('t4')
+    productEnv('t4')   # 初始化环境参数
     pytest.main()
     os.system('allure generate ./report_temp -o ./reports --clean')
     alterRep()
-    shutil.rmtree('./report_temp')
-    os.mkdir('./report_temp')
+    # shutil.rmtree('./report_temp')
+    # os.mkdir('./report_temp')
 
 
 

@@ -11,8 +11,10 @@ class productEnv:
     db_pass = ''
     db_database = ''
 
+    saveValue = dict()
+
     def __init__(self, env):
-        data = YamlUtil().read_yaml('envConfig.yml', './configs/')[env]
+        data = YamlUtil().read_yaml(path = './configs/', name = 'envConfig.yml')[env]
 
         productEnv.host = data['host']
         productEnv.token = data['token']
@@ -20,3 +22,8 @@ class productEnv:
         productEnv.db_user = data['db_user']
         productEnv.db_pass = data['db_pass']
         productEnv.db_database = data['db_database']
+
+        self.dataConfig(env)
+
+    def dataConfig(self, env):
+        productEnv.saveValue = YamlUtil().read_yaml(path = './configs/', name = 'dataConfig.yml')[env]

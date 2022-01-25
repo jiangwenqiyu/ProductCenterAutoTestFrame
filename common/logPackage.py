@@ -1,7 +1,7 @@
 import logging
 
 class MyLog(logging.Logger):
-    def __init__(self, logName, level = logging.DEBUG, file = None):
+    def __init__(self, logName, level = logging.WARNING, file = None):
         super().__init__(logName, level)
 
         fmt = '[%(levelname)s] [%(asctime)s] [%(funcName)s] %(message)s'

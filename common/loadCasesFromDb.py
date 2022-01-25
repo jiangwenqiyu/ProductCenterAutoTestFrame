@@ -8,7 +8,7 @@ import json
 import pymysql
 
 class DealTest:
-    def getCases(self, host, user, password, database):
+    def getCasesFromDb(self, host, user, password, database):
         con = pymysql.connect(host=host, user=user, password=password, database=database)
         cur = con.cursor()
         sql = ''' select s.jsonObj from product_test_functions_detail s
@@ -25,9 +25,9 @@ class DealTest:
         return t1
 
 
-    def getExcel(self):
+    def getCasesFromExcel(self, name):
         allInfo = []
-        work = xlrd.open_workbook('./提取har文件.xlsx')
+        work = xlrd.open_workbook('./testcases/{}'.format(name))
         sheet = work.sheet_by_name('sheet1')
         for i in range(1, sheet.nrows):
             temp = dict()
@@ -39,7 +39,12 @@ class DealTest:
             temp['dataType'] = sheet.cell_value(i, 5)
             temp['param'] = json.loads(sheet.cell_value(i, 6))
             temp['assert'] = json.loads(sheet.cell_value(i, 7))
+            temp['save'] = sheet.cell_value(i, 8)
+            if temp['save']:
+                temp['save'] = json.loads(temp['save'])
             allInfo.append(temp)
+
+
 
         return allInfo
 
