@@ -38,7 +38,7 @@ tt = {
 
 # tt = {"retStatus":"1","retMessage":"","retData":"2100003043","timestamp":0}
 
-a = jmespath.search('store.book[0].price', tt)
+a = jmespath.search('store.book[*].category', tt)
 print(a)
 
 

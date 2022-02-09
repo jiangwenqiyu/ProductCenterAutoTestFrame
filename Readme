@@ -6,7 +6,21 @@
     data: 入参
     dataType: 入参类型   json、form
     param: url上的参数
-    assert: 断言   [ {'jmespath': '通过jmespath取返回值的数据', 'exp': '期望值', 'type':'判断类型  eq 相等  in  期望值被包含在返回值里（exp in res）  not in 期望值不被包含在返回值里（exp not in res）' } ]
+    assert: 断言   [ {'jmespath': '通过jmespath取返回值的数据', 'exp': '期望值', 'type':'判断类型  eq 相等  in  期望值被包含在返回值里（exp in res）  notIn 期望值不被包含在返回值里（exp not in res）' } ]
     save: 对返回值进行保存  可为空，如果有数据，则在请求完成后会自动根据jmespath，提取res的数据，保存在 productEnv.saveValue里    {'用例名称': '保存的数据'}
 
+文件结构
+    common: 公用方法
+        common_functions.py:
+            parseData: 解析测试用例变量
+            excuteCases: 执行测试用例
+        logPackage.py: 日志类
+        requestPackage.py: 封装的请求类
+        yaml_util.py: 读取yaml文件的类
 
+    configs: 配置文件
+        EnvConfig.py: 配置类，启动脚本的时候，先执行这个，选择环境，以及初始化一些配置好的数据
+        dataConfig.yml: 存放提前配置好的数据，启动环境类的时候，直接初始化到类变量里，可以直接提取使用
+        envConfig.yml: 环境配置数据，地址，数据库账号密码等信息
+
+    testcases: 存放测试用例的excel
