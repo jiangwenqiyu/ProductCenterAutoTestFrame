@@ -1,7 +1,7 @@
+#encoding=utf-8
 import pytest
 import os
 import json
-import shutil
 from configs.EnvConfig import productEnv
 
 
@@ -16,7 +16,7 @@ def alterRep():
     with open('./reports/widgets/summary.json', 'w') as f:
         f.write(json.dumps(data))
 
-    with open('./reports/index.html', 'r') as f:
+    with open('./reports/index.html', 'r', encoding='utf-8') as f:
         data = f.read()
     pat = 'Allure Report'
     data = data.replace(pat, '鑫方盛测试中心')
@@ -29,10 +29,8 @@ def alterRep():
 if __name__ == '__main__':
     productEnv('t4')   # 初始化环境参数
     pytest.main()
-    os.system('allure generate ./report_temp -o ./reports --clean')
+    os.system('allure generate ./report_temp -o ./reports -c ./reports')
     alterRep()
-    shutil.rmtree('./report_temp')
-    os.mkdir('./report_temp')
 
 
 

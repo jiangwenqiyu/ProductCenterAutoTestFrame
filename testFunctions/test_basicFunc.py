@@ -10,18 +10,17 @@ import re
 from common import common_functions
 
 
-
-
 @allure.feature('基础页面接口查询')
 @pytest.mark.run(order = 1)
-@pytest.mark.skip
 class TestBasicQuery:
 
     # @allure.story('测试接口集')
     @pytest.mark.parametrize('info', DealTest().getCasesFromExcel('基础界面查询接口.xlsx'))
     @pytest.mark.flaky(reruns=2, reruns_delay=0)
     def test_query(self, info):
-        common_functions.excuteCases(info)
+        ass, res = common_functions.excuteCases(info)
+        for i in ass:
+            assert jmespath.search(i['jmespath'], res.json()) == i['exp']
 
 
 
@@ -30,12 +29,24 @@ class TestBasicQuery:
 class TestAcceptItem:
 
     @pytest.mark.parametrize('info', DealTest().getCasesFromExcel('修改验收事项.xlsx'))
-    def test_init(self, info):
+    def test_run(self, info):
         common_functions.excuteCases(info)
 
 
+@allure.feature('属性管理')
+@pytest.mark.run(order = 3)
+class TestAttributionManage:
+
+    def test_run(self):
+        pass
 
 
+@allure.feature('四级类')
+@pytest.mark.run(order = 4)
+class TestCate:
+
+    def test_run(self):
+        pass
 
 
 

@@ -1,38 +1,16 @@
 import re
 import json
 
-saveValue = {
-    '新增':{'uuid':{'idd':789}, 'iii':'草鸡巴'},
+import requests
 
-     '草':{'777':999}
-}
+url = 'http://product.t4.xinfangsheng.com/sysback/template/producttemplateattrvaluecategory/baseUpdate?menuId=218&buttonId=3'
+header = {'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json;charset=UTF-8',
+          'Cookie': 'uc_token=78483cd4925641d68c6ceb73f488c1fe'}
+data = {"uuid":"2100003092","oper":"6674","opeTime":"2022-01-25 15:02:57","delFlag":1,"createOper":"112130","createOpeTime":"2021-10-24 11:11:10","version":6,"operationNumber":None,"orgId":"1002N11000000000HS44","sortName":"opeTime","sortType":"desc","menuId":None,"buttonId":None,"loginUserId":None,"hrDepartmentNumber":None,"hrAreaId":None,"areaNo":None,"mapCondition":{},"categoryName":"脚本御用属性值分类"}
 
-def parseData(data):
-    data = json.dumps(data, ensure_ascii=False)
-    pat = '#(.*?)#'
-    r = re.findall(pat, data)
-    print(r)
-    if r:
-        for i in r:
-            d = i.split('.')
-            key = d[0]
-            value = saveValue[key][d[1]]
-            if len(d)>= 3:
-                for x in range(2,len(d)):
-                    value = value[d[x]]
-            data = data.replace('#{}#'.format(i), str(value))
-        return data
-
-    else:
-        return data
-
-
-a = {"itemid": '#新增.uuid.idd#', "iii":"2"}
-
-b = parseData(a)
-print(b)
-
-
+res = requests.post(url, headers = header, json = data).json()
+print(res)
 
 
 

@@ -48,9 +48,10 @@ def excuteCases(info):
 
     res = requests.request(info['dataType'], method, url, headers = header, data = data, params = param)     # 使用封装的方法，执行请求
 
-    for i in info['assert']:           # 遍历所有断言
-        assert jmespath.search(i['jmespath'], res.json()) == i['exp']
+    # for i in info['assert']:           # 遍历所有断言
+    #     assert jmespath.search(i['jmespath'], res.json()) == i['exp']
 
     if info['save']:                 # 判断是否有需要保存的数据
         productEnv.saveValue[info['name']] = jmespath.search(info['save']['jmespath'], res.json())
 
+    return info['assert'], res
