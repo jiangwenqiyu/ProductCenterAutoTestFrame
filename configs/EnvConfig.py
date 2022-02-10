@@ -10,6 +10,7 @@ class productEnv:
     db_user = ''
     db_pass = ''
     db_database = ''
+    ding_token = ''
 
     saveValue = dict()
 
@@ -22,6 +23,7 @@ class productEnv:
         productEnv.db_user = data['db_user']
         productEnv.db_pass = data['db_pass']
         productEnv.db_database = data['db_database']
+        productEnv.ding_token = data['ding_token']
 
         self.dataConfig(env)
 

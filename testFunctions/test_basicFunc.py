@@ -19,6 +19,7 @@ class TestBasicQuery:
     @pytest.mark.flaky(reruns=2, reruns_delay=0)
     def test_query(self, info):
         assertion, res = common_functions.excuteCases(info)
+
         for i in assertion:
             assType = i.get('type')
             if assType == None or assType == 'eq':
@@ -29,8 +30,6 @@ class TestBasicQuery:
                 assert i['exp'] not in jmespath.search(i['jmespath'], res.json())
 
 
-
-
 @allure.feature('修改验收事项')
 @pytest.mark.run(order = 2)
 class TestAcceptItem:
@@ -38,6 +37,7 @@ class TestAcceptItem:
     @pytest.mark.parametrize('info', DealTest().getCasesFromExcel('修改验收事项.xlsx'))
     def test_run(self, info):
         assertion, res = common_functions.excuteCases(info)
+
         for i in assertion:
             assType = i.get('type')
             if assType == None or assType == 'eq':

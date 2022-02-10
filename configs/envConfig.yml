@@ -5,6 +5,7 @@ t4:
   db_user: root
   db_pass: xfs123456
   db_database: productTestFrame_t4
+  ding_token: https://oapi.dingtalk.com/robot/send?access_token=f7acf4dbf372ecedb2a93113aebf6eee6d8278de40599279f59a2774c5566ef5
 
 fangzhen:
   host: http://product.pre.xinfangsheng.com
@@ -13,6 +14,7 @@ fangzhen:
   db_user: root
   db_pass: xfs123456
   db_database: productTestFrame_fangzhen
+  ding_token: https://oapi.dingtalk.com/robot/send?access_token=f7acf4dbf372ecedb2a93113aebf6eee6d8278de40599279f59a2774c5566ef5
 
 
 
