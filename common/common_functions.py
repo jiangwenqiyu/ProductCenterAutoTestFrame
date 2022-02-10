@@ -46,7 +46,7 @@ def excuteCases(info):
     data = parseData(info['data'], info['dataType'], productEnv.saveValue)     # 解析用例入参
     param = info['param']
 
-    res = requests.request(info['dataType'], method, url, headers = header, data = data, params = param)     # 使用封装的方法，执行请求
+    res = requests.request(info['dataType'], info['assert'], method, url, headers = header, data = data, params = param)     # 使用封装的方法，执行请求
 
     # for i in info['assert']:           # 遍历所有断言
     #     assert jmespath.search(i['jmespath'], res.json()) == i['exp']

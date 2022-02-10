@@ -1,18 +1,28 @@
-import pytest
+from selenium import webdriver
+import time
+
+options = webdriver.ChromeOptions()
+options.binary_location = r'D:\百分浏览器\CentBrowser\Application\chrome.exe'
 
 
-def test_01():
-    with pytest.raises(AssertionError) as e:
-        assert 1==1
-        print(123123123123)
+browser = webdriver.Chrome(r'F:\Python3\chromedriver.exe', options = options)
 
-    print(456456456456)
+url = 'http://product.xinfangsheng.com/finance/priceManage/chageFromManageSellPrice'
+browser.get(url)
+time.sleep(2)
+cook = {'name':'uc_token',
+        'value':'cb3bac116e7c4b70b793e1d38340d6c0',
+        'domain':'xinfangsheng.com'}
+time.sleep(2)
+browser.add_cookie(cook)
+time.sleep(2)
+browser.get(url)
 
 
 
 
-if __name__ == '__main__':
-    pytest.main()
+
+
 
 
 
