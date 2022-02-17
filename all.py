@@ -36,13 +36,14 @@ if __name__ == '__main__':
     os.system('allure generate ./report_temp -o ./reports -c ./reports')
     alterRep()
     endTime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-
     word = '测试环境:{}\n开始时间:{}\n结束时间:{}\n查看测试报告:{}'.format(testEnvironment, startTime, endTime, 'http://192.168.0.129:7890/index.html')
     data = {
         'text':{'content':word},
         'msgtype':'text'
             }
-    requests.post(productEnv.ding_token, json=data).json()
+    # requests.post(productEnv.ding_token, json=data).json()
+
+
 
 
 
