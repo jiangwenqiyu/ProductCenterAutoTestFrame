@@ -50,18 +50,26 @@ class TestAcceptItem:
 
 @allure.feature('属性管理')
 @pytest.mark.run(order = 3)
-class TestAttributionManage:
+class TestAttriManage:
 
-    def test_run(self):
-        pass
+    @pytest.mark.parametrize('info', DealTest().getCasesFromExcel('属性管理.xlsx'))
+    def test_run(self, info):
+        assertion, res = common_functions.excuteCases(info)
+
+        for i in assertion:
+            assType = i.get('type')
+            if assType == None or assType == 'eq':
+                assert i['exp'] == jmespath.search(i['jmespath'], res.json())
+            elif assType == 'in':
+                assert i['exp'] in jmespath.search(i['jmespath'], res.json())
+            elif assType == 'notIn':
+                assert i['exp'] not in jmespath.search(i['jmespath'], res.json())
 
 
-@allure.feature('四级类')
-@pytest.mark.run(order = 4)
-class TestCate:
 
-    def test_run(self):
-        pass
+
+
+
 
 
 

@@ -34,7 +34,6 @@ def parseData(data, dataType, saveValue):
     return data
 
 
-
 def excuteCases(info):
     ''' 发送请求 '''
 
@@ -55,3 +54,6 @@ def excuteCases(info):
         productEnv.saveValue[info['name']] = jmespath.search(info['save']['jmespath'], res.json())
 
     return info['assert'], res
+
+
+

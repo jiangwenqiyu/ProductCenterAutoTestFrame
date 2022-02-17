@@ -1,4 +1,6 @@
 from common.yaml_util import YamlUtil
+import requests
+
 
 
 # 配置环境参数
@@ -29,3 +31,7 @@ class productEnv:
 
     def dataConfig(self, env):
         productEnv.saveValue = YamlUtil().read_yaml(path = './configs/', name = 'dataConfig.yml')[env]
+
+
+
+
